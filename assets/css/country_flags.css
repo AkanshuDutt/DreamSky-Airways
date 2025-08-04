@@ -1,0 +1,19 @@
+.flg {
+    background: url("../images/country-flag.png");
+    width: 16px; height: 16px; float: left; margin-top:1px; position: relative; left:1px; margin-right: 12px;
+  }
+.flg.INR {background-position: 0 -1856px;}
+.flg.BDT {background-position: 0 -640px;}
+.flg.USD {background-position: 0 -3664px;}
+.flg.AUD {background-position: 0 -560px;}
+.flg.CAD {background-position: 0 -896px;}
+.flg.EUR {background-position: 0 -1152px;}
+.flg.AED {background-position: 0 -368px;}
+.flg.GBP {background-position: 0 -1456px;}
+.flg.NZD {background-position: 0 -2816px;}
+.flg.NPR {background-position: 0 -2783px;}
+.flg.WON {background-position: 0px -6016px;}
+.flg.SAR {background-position: 0px -7040px;}
+.flg.MYR {background-position: 0px -6543px;}
+
+  

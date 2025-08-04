@@ -1,0 +1,319 @@
+@media screen and (max-width: 1300px){
+    .airline_oneway {padding-bottom: 0;}
+    .airline_oneway {margin-top: 0px;}
+    .flt-fare-rls ul{line-height: 23px;}
+    .list-inl-md-blog{display: block !important;}
+    .flt-fare-rls {padding-top: 0px;}
+    .remark_section_res {margin-top: 16px;}
+}
+@media screen and (max-width: 1200px){
+    .price_retcols ul li h3 {font-size: 21px; padding: 2px 0;}
+    .return_fix_design {padding: 15px 0px 15px 0rem;}
+    #multicityBookingbtn {font-size: 13px; padding: 5px 16px;}
+    .detail_Bag h5 {font-size: 14px; font-weight: 600;}
+    .btn-xs{margin-bottom: 3px;}
+    .short_top_mainon{font-size: 12px;}
+    .airline-time-du{flex-wrap: wrap;}
+    .bagg_icon_round {position: relative; top: auto; right: 0; justify-content: center;}
+    .airline_title{font-size: 12px;}
+}
+@media screen and (max-width: 1040px){
+    .book_retflight .booking_btn {font-size: 13px; padding: 4px 13px;}
+    .mar_25 {margin-right: 3px;}
+    .multi_fares_total {padding: 4px 0px;}
+    .total-stop-errow {text-align: center; line-height: 0px; padding: 0vw 0.4vw;}
+    .Detail-but-viow {font-size: 10px;}
+    .flt-fare-rls {font-size: 11px;}
+    .airline-sm-round{flex-wrap: nowrap;}
+}
+
+@media screen and (max-width: 991px){
+    .visa-online-bar a {
+        font-size: 13px;
+        padding: 12px 2px;
+    }
+    .onward_mob0 {padding: 6px 0;}
+    .payment-view{font-size: 22px;}
+    .price_retcols ul li h5 {font-size: 12px;}
+    .flexible_items li {font-size: 14px;}
+    .leftborder_stop .time_font span {font-size: 13px; font-weight: 500;}
+    .leftborder_stop {padding: 5px 2px;}
+    .price_retcols {padding: 4px 8px 6px 4px;}
+    .flexuse_fare {display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
+    .price_retcols ul li h3 {font-size: 18px;}
+    .multi_fares_total{height: 91px;}
+    .multi_nine_cols {height: 91px;}
+    .multi_price {justify-content: center;}
+    .flightmodify_box {margin-bottom: 0 !important;}
+    .align_leftmob{text-align: left;}
+    .mt_mb{margin:5px 0;}
+    .booking_pax p{font-size: 12px;}
+    .inner-content{padding:15px;}
+    .mobile_tabp0{margin: 20px 15px;}
+    .inner-content {width: 100%; padding: 15px;}
+    .inner-banner img {width: 100%; height:100% !important;}
+}
+@media screen and (min-width: 992px){
+#footer_fix_price_details .col-md-2.no-padding{width: 16%;}
+.lg_btnleft0{padding-left:5px;}
+.airline-roundtrip{margin-top: 4px;}
+}
+@media (min-width:768px) and (max-width:1024px) {
+    .tax-dlt b{width: 45%;}
+    .tax-dlt span{width: 55%; }
+    }
+@media screen and (max-width: 767px){
+    .tax-dlt b, .tax-dlt span{
+        width:100%;
+     }
+ .tax-dlt{
+        align-items: baseline;
+     flex-direction: column;
+ }
+    .nxt-prev-btn { margin-top: 15px;    }
+    .top_share-btn .btn-xs{ margin-bottom: 0px;    }
+    .top_share-btn{background: #e1dfdf; text-align: center;padding: 2px 0px;}
+    .visa-dts-col h2{font-size:20px;}
+    .visa-contact {margin-top: 6px;}
+    .visa-listing .heading-4 {font-size: 17px; font-weight: 800;}
+    .Detail-but-viow {font-size: 12px;}
+    .fare-type-common-button{height:20px;}
+    .mob_block {display: block;}
+    .position_top_filter {top:0px;}
+    .online_section{  width:100%;}  
+    .msg_lightarea {text-align: center;}
+    .marsm_work{margin:10px;}
+    .booksuccess_done h3{font-size:21px; margin-bottom:10px;}
+    .greencheck i{font-size:50px;}
+    .xs_smp0{padding:0;}
+    .air_imagemob img{width:37px;}
+    #multicityBookingbtn {padding:8px 15px;}
+    .book_retflight .booking_btn {padding: 7px 13px;}
+    ul.list-inline.mb-0.flexuse_fare {justify-content: center;}
+    .price_retcols ul li h5 {margin: 3px;}
+    .price_retcols {background: #2d67b2; border-radius: 0 10px 0px 0; padding: 8px 10px; border-left: none;}
+    #footer_fix_price_details {height: 65px !important;}
+    .multi_fares_total {border-left: none; padding: 10px 5px;}
+    .ticket_login {max-width: 100%; margin: 15px;}
+    .align_leftmob li {font-size: 13px;}
+    .multi_way_round .col-xs-8.xs-padding-0{padding: 0px 15px !important;}
+    .round_way_title div{text-align: center; }
+   .margin-none-oneway{padding: 0px 25px;}
+   .breadcrumb-wrap {text-align: center;}
+    .breadcrumb-wrap .text-right{text-align: center;}
+    #footer_fix_price_details .col-xs-12.no-padding {width: 100% !important;}
+    .multicity-segment-div a {width: 49%; margin-right: 0px; font-size: 11px;}
+    .flt-sde {display: none;}
+    .butt_box_show{margin-bottom: 10px;}
+    .dashbord-content{margin-top: 10px;}
+    .customer-dashboard-ul{padding-top: 10px; text-align: center;}
+    .flt-btn{text-align: center !important;}
+    .m_none{padding-bottom: 10px; text-align: center;}
+    .left-inner-title h1{text-align: center;}
+    .right-inner-title ol{text-align: center;}
+    .sec_butt_main{font-size: 14px;}
+    .remark_section_res {margin-top: 0;}
+    .airline-sm-round{flex-wrap: wrap;}
+    .airline_xs_cen{text-align:right;}
+    .butt_bag {margin-top:5px; margin-bottom:10px;}
+    .list-inl-md-blog {display:none !important;}
+    .Depart, .Duration, .Arrive{left: auto;}
+    .flt-fare-rls {right: 10px;}
+    .contant .row {margin-top: 6px;}
+    .no-padding {padding-right:6px; padding-left:6px;}
+    .border-result-row{border:0px solid !important;}
+    .airline-time-round {justify-content: space-evenly;}
+    .price-airline{justify-content: center;}
+    .mane-detail-xs {margin-bottom: 10px; padding: 0px 10px;}
+    .Detail-but-viow {padding: 4px 6px !important; position: relative; top: 3px;}
+    .flt-fare-book:not(:last-child):after {top: calc(50% - 5px);}
+    .flt-fare-rls {font-size: 12px;}
+    .list-inl-md{display: inline-block !important;}
+    .booking_but_book {width: 120px; height: 28px; margin-top: 12px;}
+    .flght-date-wrap-shrt-dts>i{font-size: 13px;}
+    .tp-header-rgt, .tp-header-lft{text-align: center;}
+    .show-xs{display: block !important;}
+    .mdfy i{display: block;}
+    .mdfy span, .refund-flt{display: none;}
+    .modify-btn-right li{display: inline-block !important;}
+    .modify_btn .modify-btn-right button {min-height: 40px;}
+    .flt-dep-tm h4{font-size: 13px; font-weight: 700;}
+    .flt-prc-view-one {border-top: 1px solid #eee; padding-top: 3px !important;}
+    .airline-prc-col h3{font-weight: 600; font-size: 17px; margin-bottom: 1px;}
+    .flight-price-col a, .flight-price-col button {padding: 2px 5px; font-size: 11px;}
+    .flt-oneway-view-col{padding-top: 2px !important;}
+    .flight-details-oneway-col .nav-tabs a{padding: 5px 7px; font-size: 12px; font-weight: 500;}
+    .aplly-copun {display: flex; align-items: unset;}
+    .aplly-copun .form-control {max-width: 100%; margin-right: 0;}
+    .flight-srdv-details-body label{font-size: 12px;}
+    .inbond-srdv-trvls-col{margin: 0;}
+    .mange-view-rtn-lst .nav-tabs{display: block; border-bottom:1px solid #eee; background: #fff;}
+    .mange-view-rtn-lst > .nav-tabs.fixed-nav{position: fixed; top: 0; z-index:99; box-shadow: 0 0 3px rgba(0, 0, 0, 0.23); width: 100%; left: 0;}
+    .flt-tm-duration p:first-child {margin-right: 4px;}
+    .mange-view-rtn-lst > ul > li{width: calc(100% / 2);}
+    .mange-view-rtn-lst .nav-tabs > li > a{margin-right: 0px; border: 0px none !important; font-size: 13px; color: #000; font-weight:600; border-radius: inherit;}
+    .mange-view-rtn-lst .nav-tabs > li.active > a {background: var(--main-color); color: #fff;}
+    .dom-ttl-tm-paul {display: flex; flex-wrap: wrap; align-items: center; justify-content: center; order: 2;}
+    .dom-ttl-tm-paul > h4{padding-right: 11px; font-size: 14px;}
+    .dom-rtn-flt-srdv p {margin-bottom: 0;}
+    .rtn-pax-dom{text-align: left;}
+    .prc-ttl-selec-srdv-dom ul li {vertical-align: middle;}
+    .prc-ttl-selec-srdv-dom.text-center ul {display: flex; width: 100%; justify-content: end; align-items: center;}
+    #footer_fix_price_details .col-md-4.no-padding{padding: 0px;}
+    #footer_fix_price_details .col-md-12.no-padding{padding: 0px;}
+    .session-rtn.session-expire {bottom: 57px; left: 17px;}
+    .dom-flt-prc-srdv-trvls .airline_price{font-size: 20px;}
+    .domestic-return-view > div[class*="col"]:not(:last-child){padding-bottom: 2px;}
+    .duration-doms-flt > ul{padding-right: 15px; text-align: left; order: 1;}
+    .duration-doms-flt {display: flex; flex-wrap: wrap; align-items: center; justify-content: left; padding-left: 15px;}
+    .domestic-return-view > .col-md-3.col-sm-3{border-left: 1px solid #eee;}
+    .domestic-return-view{border: 1px solid #e0e0e0;}
+    #copyright{display: none;}
+    .htl-srdv-trvl-listing > .row{display: block;}
+    .hresult-info .hotel-name{margin: 4px 0px; font-size: 20px;}
+    .hresult-info {padding: 0px 15px;}
+    .htl-srdv-trvl-listing .htl-img img{height: 120px;}
+    .mhotelpricediv {display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+    .mhotelpricediv{margin-top: 0px; padding-top: 10px; padding-bottom: 10px;}
+    .hotel-checkbox .onewayfare-checkbtn{margin-right: 5px;}
+    .mhotelpricediv > .firstdiv{padding-right: 15px;}
+    .mhotelpricediv .booknow{padding: 5px 12px;}
+    .modify-htl-right .btn {width: 35px; text-align: center; padding: 0; height: 35px; line-height: 35px; font-size: 17px;}
+    .hotel-search-modfiy{padding: 0px;}
+    .htl-name-wrap {text-align: center;}
+    .htl-name-wrap{padding-top: 3px; border-top: 1px solid #eee;}
+    .htl-temp-reslt{font-size: 13px;}
+    .htl-slider-srdv-tech .flexslider .slides.full-img-sld-srdv img{height: 250px;}
+    .detail-tab-content-head-bar{padding: 11px 7px;}
+    .detail-tab-content-head-bar>div{border: 5px solid #f5f5f5; padding: 5px 11px;}
+    .htl-dtls-view-srdv-tech .detail-tabs li a{padding: 7px  10px;}
+    .htl-room-type h4{font-size: 16px;}
+    .heading-2:after, .htl-room-type h4:after{height: 3px;}
+    .htl-repeat-det-srdv>.row>div {width: 100%;}
+    .htl-st-dts {padding-top: 6px;}
+    .htl-desc-wrap {line-height: 20px; font-size: 13px;}
+    .htl-tp-dts-bar h3{font-size: 19px; margin-bottom: 5px;}
+    .flight-srdv-details-body {padding: 15px 10px;}
+    .room-type-htl-dts ul {margin-bottom: 2px;}
+    .heading-2{font-size: 16px;}
+    .htl-tp-com i{font-size: 14px;}
+    .htl-tp-com{padding-left: 15px; margin-bottom: 5px;}
+    .car-price {padding: 5px 0px; text-align: center; border-top: 1px solid #e5e4e4; margin-top: 5px;}
+    .car-price .btn-car-book {width: auto;}
+    .car-processing{width: 100%;}
+    .car-processing .btn-car-book{width: 100%; padding: 5px 7px; margin-top: 5px;}
+    .wrapper-dash-customer-srdv > .row > div[class*="col"]{width: 100%; padding: 0px 15px; min-height: inherit;}
+    .customer-dashboard-ul > li {display: inline-block; margin-bottom: 3px;}
+    .customer-dashboard-ul > li:not(:last-child) > a{border-bottom: 0px none;}
+    .customer-dashboard-ul > li > a > i{display: none;}
+    .customer-dashboard-ul > li > a{border: 1px solid #cacaca !important; padding: 7px 12px; font-size: 12px;}
+    .customer-dashboard-ul > li.active > a{background: var(--main-color); color: #fff; border-color: var(--main-color) !important;}
+    .wrapper-dash-customer-srdv{padding: 0;}
+    .login-temp-col-wrapper > .row > div[class*="col"]{width: 100%;}
+    .login-instrct{display: none;}
+    #hotel_search_form .hotel-search-modfiy{padding: 10px 5px 15px 5px;}
+    .busSeatlft .lower{left: 14px;}
+    .busSeatrgt{padding-left: 15px;}
+    .search_info_date{padding-left:5px;}
+    .flt-dts-md--stp{display: block;}
+    .sort-details-sedv-trvl-online.flt-oneWay-flt-we > div > .row{display: flex; flex-wrap: wrap;}
+    .sort-details-sedv-trvl-online.flt-oneWay-flt-we > div > .row >.modify_btn{order: 3;}
+    .sort-details-sedv-trvl-online.flt-oneWay-flt-we > div > .row >.search_info_date{order: 4;}
+    .flt-oneWay-flt-we .flght-common-dts p{font-weight: 800; font-size: 15px; text-align: center; padding: 0px 3px;}
+    .flt-oneWay-flt-we .flght-common-dts p.ftl-e.ft-icn{color: var(--main-color);}
+    .flt-oneWay-flt-we .flght-date-wrap-shrt-dts>i, .flght-oneWay-airline .flt-dep-tm p{display: none;}
+    .flt-oneWay-flt-we .flt-dt-clnd{padding-left: 0; text-align: center;}
+    .sort-details-sedv-trvl-online.flt-oneWay-flt-we{padding: 8px 0px 0px;}
+    .sort-details-sedv-trvl-online.flt-oneWay-flt-we .flght-date-wrap-shrt-dts{background: var(--main-color); color: #fff; padding: 3px 0px;}
+    .flt-oneWay-flt-we.flt-paul {width: 100%; position: fixed; top: 0; background: #fff; z-index: 999; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);}
+    .flt-oneway-view-col > .row > .col-xs-5{position: inherit;}
+    .flt-oneway-view-col > .row > .col-xs-5 .ttl-flt-duration-wrap .arr-dep-city{display: none;}
+    .ftl-e, .flt-stp-way{display: block;}
+    .flt-oneWay-flt-we .flght-common-dts{display: flex; flex-wrap: wrap;}
+    .arr-dep-city {text-align: center;}
+    .border-left-none{border-right: 0px solid !important;}
+    .flt-np{justify-content: center;}
+    .airline_oneway {padding-bottom: 0;}
+    .errow_butt-price {margin: 10px auto; margin-top: -10px;}
+    .booking-butt{margin-top: -5px; justify-content: center; display: flex; margin-bottom: 8px;}
+    .total-stop-errow {padding: 0vw 6.4vw;}
+    .flt-fare-rls {font-size: 12px; font-weight: 500; text-align: center; padding-left: 10px; position: relative; right: auto; padding-top: 5px;}
+}
+@media screen and (max-width: 680px){
+    .airline-time-round {justify-content: space-between;}
+    .duration-doms-flt {padding-left: 0;}
+    .total-stop-errow {padding: 0vw 0.4vw;}
+    .flt-fare-rls {right: 17px;}
+    .price-airline {justify-content: space-between; padding: 0px 10px;}
+    .price-flight-round {justify-content: center !important;}
+    .mobfull_width {
+        justify-content: center;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 576px){
+    .visa-serv p{font-size:12px;}
+    .visa-serv {min-height: 100px;}
+    .visa-card-wrap h3{font-size: 16px;}
+    .confirmed_head h4{font-size:15px;}
+    .flex_obpnr h3 {font-size: 15px; font-weight: 700;}
+    .fnt_mob12{font-size:11px;}
+    .terminal_book p {font-size: 11px;}
+    .farecalender-price small {font-size: 13px;}
+    .flght-common-dts.flt-np.common_box_sm p {font-size: 12px;}
+    .shortflight_num {padding: 0px 4px 0 10px;}
+    .small_device_p5 {padding: 5px;}
+    .shortflight_num p {font-size: 12px;}
+    .list-inl-md-blog {display:block !important;}
+    .modify-btn-right li{padding: 0px 1px;}
+    .modify_btn .modify-btn-right button, .modify_btn .modify-btn-right a{padding: 1px 5px; min-height: 27px;}
+    .bus-dts-com-srdv-trvl {text-align: left; margin-bottom: 6px;}
+    .car-price .btn-car-book {width: 91%; padding: 5px 5px;}
+    .htl-tp-com i {font-size: 11px;}
+}
+@media screen and (max-width: 480px){
+    .car-price-total h5 {
+    font-size: 14px;
+    
+    }
+    .booking_but_book{margin-top: 0px;}
+    .multicity-segment-div a {padding: 5px 6px;}
+    .align_leftmob li {padding: 0px; font-size: 11px; letter-spacing: -0.2px; font-weight: 500;}
+    .flght-psg-deails-pop > ul > li > span {padding:3px 22px 3px 5px; font-size: 12px;}
+    .Bag__price h6 {padding-right: 2px; font-size: 14px;}
+    .oneway-flt .col-xs-2.Arrive{padding-right: 0px;}
+    .margin-none-oneway{padding: 0px 0px;}
+    .detail_Bag h5 {font-size: 14px;}
+    .booking-butt {justify-content: center; display: inherit;}
+    .flt-fare-book:not(:last-child):after {background:transparent;}
+    .flt-fare-book:not(:last-child):after {top: calc(50% - 13px);}
+    .airline-logo-name img {max-width: 30px; height: 30px;}
+    .airline-logo-name p {margin-bottom: 0; font-size: 10px; text-align: center; font-weight: 500;}
+    .flt-fare-rls {text-align: right;}
+}
+@media screen and (max-width: 390px){
+    .flght-psg-deails-pop ul li{margin-bottom:8px;}
+    .wate_kg{font-size:12px;}
+    .flexitem1 {flex-basis: 64%;}
+    .flexitem2 {flex-basis: 36%;}
+    .Bag_but_Add {padding: 2px 5px;}
+    .detail_Bag h5 {font-size: 12px;}
+    .price-airline {padding: 0;}
+    .booking_but_book {margin-top: -10px;}
+    .seat-flt{padding-right: 0px !important;}
+    .flt-fare-rls {right: 7px;}
+    .flight-name-main {padding: 0px 3px;}
+    .xs-space{padding-right: 8px; padding-left: 8px;}
+    .list-inl-sec {padding-right: 1px !important; padding-left: 1px !important;}
+    .flt-fare-rls {font-size: 11px;}
+    .modify_btn .modify-btn-right button, .modify_btn .modify-btn-right a{min-height: 27px;}
+    .booking-butt {justify-content: center; margin:5px auto;}
+}
+@media screen and (max-width: 350px){
+    .Bag__price h6 {font-size: 13px; letter-spacing: -0.5px;}
+    .margin-none-oneway .col-xs-8{padding-left: 0px;}
+    .detail_Bag h5 {font-size: 10px;}
+}

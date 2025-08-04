@@ -1,0 +1,103 @@
+body {background: #fff;}
+.inner_middle_area {margin: 30px 0px;}
+.holiday_left_section {background: #fff; box-shadow: 0 15px 40px 5px rgb(133 132 132 / 52%); padding: 15px 10px; border-radius: 15px;}
+.search_widget {font-size: 18px; font-weight: 600; margin-bottom: 10px; position: relative; color: var(--main-color); line-height: 20px;}
+.no_ofdays {cursor: pointer;}
+.holiday-left-box {margin-bottom: 25px; border-bottom: 1px solid #cdc9c9;}
+.holiday-btn {border: 0px; background: var(--main-color); padding: 8px 20px; font-size: 15px; line-height: 20px; text-transform: uppercase; border-radius: 5px;}
+.ho_discribe {border-left: 1px solid #cdc9c9; border-right: 1px solid #cdc9c9;}
+.holiday_right_section {box-shadow: 0 15px 40px 5px rgb(133 132 132 / 52%); padding: 10px; border-radius: 15px; margin-bottom: 35px; background: #fff;}
+.holiday_right_section .row {flex-wrap: wrap; display: flex; align-items: center;}
+.holiday_right_img {height: 150px; border-radius: 5px; width: 100%;}
+.holiday_name {font-size: 25px; color: #111; margin: 0px; font-weight: 600;}
+.holiday_pckg-time h3 {font-size: 14px; color: var(--main-color); font-weight: 600; margin-bottom: 0; margin-top: 10px;}
+.holiday_discription {border-bottom: 1px solid #cdc9c9; margin-top: 25px; padding-bottom: 15px;}
+.holiday_discription p {color: var(--main-color); font-size: 15px; font-weight: 600; margin: 0px;}
+.holiday_para {display: -webkit-box; max-width: 400px; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; margin: 10px 0px;}
+.holiday_discription h6 {margin-top: 0px; font-size: 17px; font-weight: 600; margin-bottom: 5px;}
+.holiday_price-pckg {color: #111; font-size: 25px; font-weight: 900; margin-top: 15px;}
+.holiday_price-pckg small {color: #333; font-weight: 500; font-size: 13px; line-height: 12px; display: block;}
+.btn-detail {border: 0px; background: var(--main-color); padding: 8px 20px; font-size: 15px; line-height: 20px; color: #fff;}
+.btn-detail:hover {color: #fff;}
+.btn-enquire {border: 0px; background: #fff; padding: 8px 12px; font-size: 15px; line-height: 20px; color: var(--main-color); border: 1px solid var(--main-color);}
+.btn-enquire:hover {background: var(--main-color); color: #fff;}
+.pckg-bottom-bar {cursor: pointer; background: #e0e0e0; padding: 3px; text-align: center;}
+.pckg-bottom-bar i {font-size: 18px; display: block; color: var(--main-color);}
+.outer {margin: 0 auto; max-width: 800px;}
+#big .item {background: #ec6e46; margin: 2px; color: #FFF; border-radius: 3px; text-align: center;}
+#big .item img {width: 100%; height: 300px;}
+#thumbs .item {padding: 0px; margin: 2px; color: #fff; border-radius: 3px; text-align: center; cursor: pointer;}
+#thumbs .item img {height: 70px; width: 100%;}
+#big .owl-nav i:hover {background: transparent;}
+#thumbs .item h1 {font-size: 18px;}
+#thumbs .current .item {border-bottom: 5px solid var(--main-color);}
+.owl-theme .owl-nav [class*='owl-'] {-webkit-transition: all .3s ease; transition: all .3s ease;}
+.owl-theme .owl-nav [class*='owl-'].disabled:hover {background-color: #D6D6D6;}
+#big.owl-theme {position: relative;}
+#big.owl-theme .owl-next,
+#big.owl-theme .owl-prev {background: #fff; width: 22px; line-height: 40px; height: 40px; margin-top: -20px; position: absolute; text-align: center; top: 50%;}
+#big.owl-theme .owl-prev,
+#thumbs.owl-theme .owl-prev {
+	left: 0px;
+}
+#big.owl-theme .owl-next,
+#thumbs.owl-theme .owl-next {
+	right: 0px;
+}
+#thumbs.owl-theme .owl-next,
+#thumbs.owl-theme .owl-prev {
+	display: none;
+}
+.holiday-detail-wrap {box-shadow: 0 15px 40px 5px rgb(133 132 132 / 52%); padding: 10px; border-radius: 15px; margin-bottom: 35px; background: #fff;}
+.citiemain:not(:last-child) {border-bottom: 1px dotted #999; margin-bottom: 25px; padding-bottom: 15px;}
+.city_title {margin-top: 0px; font-size: 21px; font-weight: 700; color: #111;}
+.holiday-sidebar-wrap {background: #fff; box-shadow: 0 15px 40px 5px rgb(133 132 132 / 52%); padding: 10px; border-radius: 15px; margin-bottom: 25px;}
+.buy_now {display: flex; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px dashed #c9c4c4; padding-bottom: 15px; align-items: center;}
+.buy_now h3 {font-size: 18px; font-weight: 700; margin: 0px;}
+.buy_now .price_inr {font-size: 21px; font-weight: 700; margin: 0px; color: var(--main-color);}
+.holiday_tabpanel .nav-pills>li.active a {background: var(--main-color); color: #fff;}
+.holiday_tabpanel .nav-pills>li a {background: #e4e4e4; color: #111; font-weight: 500; font-size: 14px; margin-bottom: 5px;}
+.holiday_tabpanel .tab-content .tab-pane {padding: 20px 0px; font-size: 13px; font-weight: 500; color: #333;}
+#accordion .panel-title a {display: block; width: 100%; padding: 10px 10px; background: #f6cfcf; border: 0px; font-size: 13px; font-weight: 600; color: #111; text-decoration: none;}
+#accordion .panel-title a span {color: var(--main-color);}
+#accordion .panel-title {position: relative;}
+.accordion {
+	background: #f6cfcf; color: #f02222; cursor: pointer; padding: 6px 18px; width: 100%; border: none; text-align: left; outline: none; font-size: 15px;
+	transition: 0.4s; margin-bottom: 20px; border-radius: 5px; font-weight: 600; position: relative;
+}
+.accordion:hover {background: #e9e7e7;}
+.panel_part {padding: 0 18px; display: none; background: #fff; overflow: hidden;}
+.accordion:after {
+	content: "\f067"; font-size: 13px; float: right; margin-left: 5px; font: normal 14px/1 FontAwesome;
+	color: #f02222; top: 31%; position: absolute; right: 10px;
+}
+.accordion.active:after {content: "\f068"; font: normal 14px/1 FontAwesome; color: #f02222;}
+.heading-inc {margin-bottom: 10px; font-size: 15px; font-weight: 700; color: #111;}
+.mail_call {font-size: 15px; font-weight: 600;}
+.mail_call a {text-decoration: none; color: #111;}
+.paragraph {font-size: 13px; margin: 10px 0px; color: #333; font-weight: 500;}
+@media screen and (max-width: 1024px) {
+	.holiday_name {font-size: 20px;}
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+	.tour-listbtn {margin-top: 10px; border-top: 1px solid #d2cdcd; padding-top: 15px;}
+}
+@media screen and (min-width: 992px) {
+	.pt-50 {margin-top: 50px;}
+}
+@media screen and (max-width: 992px) {
+	.messagebox textarea {height: 100px;}
+}
+@media screen and (max-width: 767px) {
+	.holiday_right_section {margin-top: 20px;}
+}
+@media (min-width: 480px) and (max-width: 767px) {
+	.holiday_right_section .row .div-wrap {width: 50%;}
+}
+@media screen and (max-width:480px) {
+	.holiday_right_section .row {display: block;}
+	.holiday_tabpanel .nav-pills>li {width: 48%;}
+	.holiday_tabpanel .nav-pills>li a {height: 62px; margin-bottom: 5px; margin-right: 1px;}
+	.holiday_price-pckg {margin: 10px 0px;}
+	.holiday_right_img {height: 240px; margin-bottom: 15px;}
+}

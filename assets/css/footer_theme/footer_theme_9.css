@@ -1,0 +1,62 @@
+.fo_footer {background:var(--color-3); padding:30px 0px; color: #fff; border-top: 2px solid var(--main-color);}
+.fo_footer_heading6 h4 {margin-top:0; color:#fff; font-size: 17px; position: relative; padding-bottom:10px; margin-bottom:16px; border-bottom:1px solid rgba(204, 204, 204, 0.17); font-weight:700; font-family: 'Quicksand', sans-serif; text-transform:uppercase;}
+.fo_footer_heading6 h4:after {position:absolute; bottom: -2px; width:25px; content: ''; height:3px; background:var(--main-color); left: 0;}
+.fo_footer_heading6 i {color: #fff;}
+.ho_footer-address ul li{margin:10px 0px;}
+.ho_footer-address ul li a{color: #fff;}
+.ho_footer-navbar ul li{margin-bottom: 10px;}
+.ho_footer-navbar ul li a{position:relative; display:inline-block; font-weight:500; color: #fff; transition: 0.5s; text-decoration:none;}
+.ho_footer-navbar ul li a:hover{padding-left:5px;}
+.fo_newsletter{position: relative;}
+.fo_newsletter .form-control {background: #fff; border: 1px solid #eaeaea; padding: 0.375rem 7rem 0.375rem 0.75rem; border-radius:0;}
+.fo_newsletter .btn {background: var(--main-color); border: 0px; color: #fff; position:absolute; bottom:0px; width:auto; right:0; margin:0; border-radius:0; top:0;}
+.fo_copyright {background:var(--color-4); padding: 10px 0px; color: #fff;}
+.fo_copy p {font-size: 13px; text-align: end; font-weight: 500;}
+.fo_social-media-col ul{margin-bottom: 0px;}
+.fo_social-media-col ul li a {
+    width: 33px; height: 33px; border: 1px solid #fff; align-items: center; justify-content: center;
+    border-radius: 50%; color: #fff; display: block; text-align: center; line-height: 31px; font-size: 16px;
+}
+.fo_social-media-col ul li {padding: 0 2px;}
+.facebookbg a {background: #3b5998;}
+.twitter_img img {margin-top: -3px;}
+.youtubebg a {background: #ff0000;}
+.linkedinbg a {background: #0a66c2;}
+.googlebg a {background: #e44134;}
+.payment_method strong {font-size: 12px;}
+  .instagrambg a {
+    background: radial-gradient(circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%);
+  }
+.fo_copy_right{display: flex; align-items: center; flex-wrap: wrap;}
+.fo_banking-options .list-inline {margin: 0px;}
+.fo_banking-options ul li {padding: 0;}
+.fo_banking-options img {border-radius: 3px; width:37px;}
+.fo_footer_heading6 ul li a {color: #fff; font-weight: 500; font-family: 'Roboto', sans-serif; text-decoration: none; font-size: 14px;}
+.ho_footer-address ul li {margin: 0 0px 22px; color: #fff; padding-left: 28px;}
+.ho_footer-address i {position: absolute; left: 0; color: #fff; border-radius: 50%; border:2px solid #fff; height:34px; width:34px; line-height:30px; text-align:center;}
+@media screen and (max-width: 991px){
+    .fo_footer_heading6 {margin-bottom: 30px;}
+    .fo_banking-options img {width:47px; margin-bottom: 5px;}
+}
+@media screen and (max-width: 768px){
+    .fo_copy{text-align: center;}
+    .fo_banking-options{margin: 10px 0px; text-align: center;}
+    .fo_banking-options .list-inline-item{padding-left: 0px;}
+ }
+@media screen and (max-width: 767px){
+    .fo_copy p{text-align: center;}
+    .ho_footer-address i {left: 14px;}
+    .ho_footer-address ul li {padding-left: 40px;}
+    .fo_banking-options {margin:5px 0px; border-bottom:1px solid #ccc3; border-top: 1px solid #ccc3; padding:5px 0;}
+    .fo_copy_right{text-align: center;}
+}
+
+
+
+
+

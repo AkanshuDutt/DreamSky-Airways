@@ -1,0 +1,85 @@
+.bus-booking-wrap .search-btn-fld button {font-weight: 600; border-radius:6px;}
+.view_seat_btn{border-radius:6px !important; font-weight: 500;}
+#filter_click_submit{display: none;}
+.ui-datepicker{z-index: 9999 !important; width: 20em !important;}
+.modify-filter-col .flght-searchbar.bus-booking-wrap{border-top: 0; padding: 0;}
+.modify-filter-col .search-icn .input-group-addon{right: 18px;}
+.bus-depart-date {color: #fff; font-size: 17px; padding-top: 8px;}
+.bus-depart-date i {margin-right: 5px;}
+.modify_btn.bus-modify_btn {padding-top: 0; text-align: right;}
+.bus-page-temp-btm .bus-col {position: relative;}
+.bus-trvaller-name .traveldiv .busname {font-size: 14px; font-weight: 600; color: #000; display: block; margin-bottom: 0px;}
+.bus-trvaller-name .traveldiv .businfo {font-size: 13px;}
+.bus-arrive-depart-time .mduration > span {display: block; padding: 1px 3px;}
+.bus-arrive-depart-time .mduration > span:first-child> span:first-child {padding-right: 30px; position: relative;}
+.bus-arrive-depart-time .mduration>*:nth-child(1)>* {font-weight: bold; color: #333333; padding-bottom: 3px; margin-bottom: 2px; display: inline-block;}
+.bus-arrive-depart-time .mduration > span > span {margin: 0px 5px;}
+.bus-page-temp-btm .bus-col .busprice {font-size: 20px; font-weight: 600; color: #1a60ab;}
+.seat-cancel {padding-top: 7px;}
+.bus-page-temp-btm .contant .row:hover{box-shadow: inherit;}
+.seat-cancel a {color:var(--secondary-color); font-size:14px; text-decoration:none; font-weight:500;}
+.bus-arrive-depart-time .mduration > span:first-child> span:first-child:after {
+    content: "\f0ec"; position: absolute; right: 0; font-size: 14px; top: 0; font-weight: 300; font-family: 'FontAwesome';
+}
+.view_seat_btn:focus{outline:none !important; color:#fff;}
+.bus_book{border-radius:10px; box-shadow:0 3px 7px 0px rgb(0 0 0 / 22%);}
+.bus-repeat-travle .booking_btn:hover{color: #fff;}
+.bus-dep-arr li {padding: 0px 25px;}
+.bus-seat-status {padding-bottom: 15px;}
+.bus-seat-status .sts {font-weight: 600; color: #1d55a1; padding-left: 5px;}
+.bus-payment-col {padding: 5px 0px; border-bottom: 1px solid #c1c1c1; border-top: 1px solid #c1c1c1; margin-bottom: 15px;}
+.bus-deatail-wrapp {margin-top: 25px;}
+.boaring-point {margin-bottom: 15px;}
+.flght-side-det {background: #fff; padding: 15px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);}
+.review_title {border-bottom: 1px solid #1d60a9; padding: 5px 10px; margin-bottom: 10px; background: #1d60a9; font-weight: 600; color: white;}
+.flght-side-det .fare_details li {padding: 5px 13px; border: 0px none;}
+.flght-side-det h4{margin: 0; font-weight: 300; font-size: 15px;}
+.flght-side-det .snf_hnf {color: #fff; font-weight: 300;}
+.flght-side-det .for_net_fare_div{color: #124680; margin-bottom: 0px;}
+.w-100{width: 100%;}
+.flght-searchbar.bus-booking-wrap label {display: block;}
+.sidebar-wrap .price_filter{margin: 0; margin-top: 10px; border: 1px solid #ccc; background:#fff;}
+.bus-booking-right-wrap {display: block; width: 100%;}
+.list-ar{position: relative;}
+.list-ar li{margin-bottom: 3px; color: #1f1f1f; font-size: 13px;}
+@media screen and (max-width: 767px){
+    .mob_display {
+        border: 2px solid #dfdfdf;
+        border-radius: 5px 5px;
+        padding: 5px 28px !important;
+    }
+    .htl-tp-com.mob_display i{
+        position: absolute;
+        left: 5px;
+        font-size: 19px;
+        top: 9px;
+    }
+    
+    .modify-htl-right #filter_click{line-height: 35px;}
+    .bus-col.bus-prc-wrap {text-align: right;}
+    .hide-bus-wrap-mob{display: none !important;}
+    .filter_click_submit {position: fixed; left: 0; width: 100%; bottom: 0; font-size: 15px!important; background: #3072ac; z-index: 99;}
+    .position {position: fixed; height: 100%; background: #fff; width: 100%; z-index: 1000; top: 0; padding-top: 15px; overflow-y: scroll; padding-bottom: 50px;}
+    .position_top_filter {top: 145px;}
+    .hidden-on-mob{display: none;}
+    .show-flt-btn, .xs-show{display: block !important;}
+    .bus-trvaller-name i{display: none;}
+    .bus-col.bus-trvaller-name{padding-left: 0px;}
+    .seat-cancel a{text-align: center; color: #ff0000; display: block;}
+    .bus-dep-arr li {padding: 0px 0px;}
+    .bus-page-temp-top h5 {font-size: 12px; text-align: center;}
+    .bus-page-temp-top > div> div {padding: 0px 3px;}
+    .bus-dep-arr{text-align: center;}
+    .bus-trvaller-name .traveldiv .busname, .bus-trvaller-name .traveldiv .businfo{font-size: 11px;}
+    .bus-page-temp-btm .bus-col .busprice{font-size: 20px; text-align: center;}
+    .bus-repeat-travle .booking_btn{white-space: normal; font-size: 11px;}
+    .bus-seat-leyout .container, .bottom-footer .container{padding: 0px 15px;}
+    .bus-booking-right-wrap {margin-bottom: 14px;}
+    .bus-board-point {text-align: center; padding-top: 5px; padding-bottom: 5px;}
+    .bus-modify_btn .filter-btn{padding: 4px 7px; font-size: 15px;}
+    .modify_btn.bus-modify_btn button {font-size: 9px; padding: 7px;}
+    .bus-modify-temp .container{padding-right: 15px; padding-left: 15px;}
+    .bus-col.bus-trvaller-name.bus-com-name {border-bottom: 1px solid #e2e2e2; margin-bottom: 5px; padding-bottom: 5px;}
+    .bus-booking-side #filter_click_submit, .paul-htl-filter #filter_click_submit{display: block;}
+}
+
