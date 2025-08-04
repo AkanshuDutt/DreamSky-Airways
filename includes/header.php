@@ -329,6 +329,7 @@ if (isset($pageRobots) && $pageRobots) {
                   <li><a href="service.php">Services</a></li>
                   <li><a href="career.php">Career</a></li>
                   <li><a href="faq-page.php">FAQ</a></li>
+                  <li><a href="Contact-Enquery-Form.php">Enquery</a></li>
                   <li><a href="contact-us.php">Contact</a></li>
                 </ul>
               </div>
