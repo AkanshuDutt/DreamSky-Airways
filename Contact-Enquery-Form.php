@@ -7,10 +7,7 @@ $pageRobots = 'index,follow';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
-require 'vendor/PHPMailer/src/Exception.php';
-require 'vendor/PHPMailer/src/PHPMailer.php';
-require 'vendor/PHPMailer/src/SMTP.php';
+require 'vendor/autoload.php';
 
 include('includes/header.php');
 
@@ -87,14 +84,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com'; 
             $mail->SMTPAuth = true;
-            $mail->Username = 'your_smtp_username@gmail.com'; 
-            $mail->Password = 'your_smtp_password'; 
+            $mail->Username = 'dreamskyairways@gmail.com'; 
+            $mail->Password = 'uvk5ewwxieolnguybnmobyyntwte2lf7'; 
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
          
             $mail->setFrom('noreply@dreamskyairways.com', 'Dream Sky Airways');
-            $mail->addAddress('your_email@example.com'); 
+            $mail->addAddress('dreamskyairways@gmail.com'); 
             $mail->addReplyTo($email, $full_name);
             $mail->addAttachment($upload_file); 
             $mail->isHTML(true);
@@ -158,7 +155,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </style>
 
 <div class="breadcumb text-center">
-    <h2>PACKAGE ENQUIRY</h2>
+    <h2>PACKAGE INQUIRY</h2>
 </div>
 
 <section class="wrapper_inner mt-5 mb-5" style="margin:0px 0;">
@@ -220,13 +217,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                 <div class="form-group">
                                     <div class="col-md-12">
                                         <label>Message *</label>
-                                        <textarea name="message" rows="6" class="form-control" required></textarea>
+                                        <textarea name="message" rows="6" class="form-control" style="resize:none" required></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row marT10">
                                 <div class="col-md-12 pedT20 cont_submit">
-                                    <input type="submit" value="Submit Enquiry" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Loading...">
+                                    <input type="submit" value="Submit Inquiry" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Loading...">
                                 </div>
                             </div>
                         </form>

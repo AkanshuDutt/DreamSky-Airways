@@ -182,9 +182,14 @@ include('includes/header.php');
         height: 50vh;
     }
 }
+.ho_offsr-thmb-img{
+     margin-top:30px;
+     width: 100%;
+}
+
 
 </style>
-<div class="contai  ner" style="margin-top:10px;">
+<div class="container" style="margin-top:60px;">
     <div class="ho_sectionarea col-md-12 lgmtop_minus">
         <div class="super-offers-topbar offeringcol">
             <div class="row">
@@ -1734,7 +1739,7 @@ include('includes/header.php');
                         </div>
                         <div class="item">
                             <div class="ho_testimonial_item">
-                                <img src="assets/images/V12.jpg">
+                                <img src="assets/images/professonal selfe.jpg">
                                 <p><i class="icofont-quote-left"></i>
                                     I had a fantastic experience with dreamskyairways.com for booking my air tickets. The
                                     website was user-friendly, and I found great deals tailored to my needs. Their
@@ -1748,7 +1753,7 @@ include('includes/header.php');
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
                                 </div>
-                                <h6>Aman</h6>
+                                <h6>Akanshu Dutt</h6>
                             </div>
                         </div>
                         <div class="item">
@@ -1921,19 +1926,6 @@ include('includes/header.php');
     }
 </style>
 
-<!--Our Why section srart-->
-<!-- <div class="theme2_why-we">
-    <div class="container">
-        <div class="footer-list">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 why_choose">
-                    <h4></h4>
-                    <p></p>
-                </div> -->
-            </div>
-        </div>
-    </div>
-</div>
 
 
 
