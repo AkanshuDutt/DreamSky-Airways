@@ -4,7 +4,7 @@ $pageDescription = "Enquire about travel packages with Dream Sky Airways. Fill t
 $pageCanonical = "https://www.dreamskyairways.com/package-enquiry.php"; 
 $pageRobots = 'index,follow';
 
-// Include PHPMailer
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -15,9 +15,8 @@ require 'vendor/PHPMailer/src/SMTP.php';
 include('includes/header.php');
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    // Validate file size and type
     $allowed_types = ['application/pdf', 'image/jpeg', 'image/png'];
-    $max_file_size = 1048576; // 1 MB
+    $max_file_size = 1048576; 
     $file_error = false;
     $upload_dir = 'uploads/';
     $upload_file = '';
@@ -42,7 +41,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     if (!$file_error) {
-        // Sanitize form inputs
         $full_name = htmlspecialchars($_POST['full_name']);
         $father_name = htmlspecialchars($_POST['father_name']);
         $email = htmlspecialchars($_POST['email']);
@@ -52,7 +50,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $address = htmlspecialchars($_POST['address']);
         $message = htmlspecialchars($_POST['message']);
 
-        // Create HTML email content
         $html_content = "
         <html>
         <head>
@@ -85,31 +82,27 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </body>
         </html>";
 
-        // Initialize PHPMailer
         $mail = new PHPMailer(true);
         try {
-            // SMTP Configurationv
             $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com'; // Replace with your SMTP host
+            $mail->Host = 'smtp.gmail.com'; 
             $mail->SMTPAuth = true;
-            $mail->Username = 'your_smtp_username@gmail.com'; // Replace with your SMTP username
-            $mail->Password = 'your_smtp_password'; // Replace with your SMTP password or App Password
+            $mail->Username = 'your_smtp_username@gmail.com'; 
+            $mail->Password = 'your_smtp_password'; 
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
-            // Email settings
+         
             $mail->setFrom('noreply@dreamskyairways.com', 'Dream Sky Airways');
-            $mail->addAddress('your_email@example.com'); // Replace with your email address
+            $mail->addAddress('your_email@example.com'); 
             $mail->addReplyTo($email, $full_name);
-            $mail->addAttachment($upload_file); // Attach the uploaded file
+            $mail->addAttachment($upload_file); 
             $mail->isHTML(true);
             $mail->Subject = ' Package Enquiry ' . $full_name;
             $mail->Body = $html_content;
 
-            // Send email
-            $mail->send();
+                  $mail->send();
 
-            // Display success message
             echo "<div style='background:#e6ffe6; padding:15px; margin:20px; border:1px solid #0a0;'>
                     <h3>Thank you for your enquiry!</h3>
                     <p><strong>Full Name:</strong> $full_name</p>
@@ -126,7 +119,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             echo "<script>alert('Failed to send enquiry. Error: {$mail->ErrorInfo}');</script>";
         }
 
-        // Delete the uploaded file after sending email
         if (file_exists($upload_file)) {
             unlink($upload_file);
         }
