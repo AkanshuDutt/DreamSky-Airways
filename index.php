@@ -1926,23 +1926,6 @@ include('includes/header.php');
     }
 </style>
 
-<!--Our Why section srart-->
-<<<<<<< HEAD
-<!-- <div class="theme2_why-we">
-    <div class="container">
-        <div class="footer-list">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 why_choose">
-                    <h4></h4>
-                    <p></p>
-                </div> -->
-            </div>
-        </div>
-    </div>
-</div>
-=======
-
->>>>>>> akanshu
 
 
 
