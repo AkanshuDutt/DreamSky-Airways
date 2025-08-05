@@ -5,7 +5,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Quicksand', sans-serif;
 }
 /*  header cssssssss  */
-.top-bar{margin-bottom: 9px;}
+/* .top-bar{margin-bottom: 9px;} */
 .mt-0{margin-top: 0px;}
 nav.navbar.navbar-default.top-bar li a {color: #fff; padding: 4px 10px;}
 nav.navbar.navbar-default.top-bar {min-height: inherit; height: auto; background: #174c76; border: 0; border-radius: inherit;}
@@ -24,7 +24,7 @@ img.con-flag {width: 18px;}
 .navbar-inverse .navbar-nav>.open>a:hover {
     background: #7daad1;
 }
-.navbar-inverse .navbar-nav>li>a {color:#fff; padding: 14px 21px; font-size: 15px; text-transform: uppercase;}
+.navbar-inverse .navbar-nav>li>a {color:#fff; padding: 14px 1px; font-size: 15px; text-transform: uppercase;}
 .navbar-nav>li:hover {background: #7daad1;}
 .navbar-inverse .navbar-nav>.active>a {background: #7daad1;}
 /*  end header cssssssss  */

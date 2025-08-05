@@ -171,16 +171,17 @@
 
  <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="fo_footer_heading6">
-
         <h4>Dream Sky Airways Pvt. Ltd.</h4>
         <p style="color: orange; font-weight: bold;">The Company is recognizes NCT & MCA, MSME Certified.</p>
         <p> A-43, Noida Sector-63 Near by Dainik Jagaran Gautam Budh Nagar 201301</p>
         <p><strong>Phone: </strong> +918750610304 </p>
-        <p><strong>For Holidays Support:</strong> holidays@dreamskyairways.com </p>
-        <p><strong>For Info:</strong> info@dreamskyairways.com</p>
-        <p><strong>For Career:</strong> hr@dreamskyairways.com</p>
+        <p><strong>For Holidays Support:</strong><a href="mailto:holidays@dreamskyairways.com";">holidays@dreamskyairways.com</a></p>
+        <p><strong>For Info:</strong><a href="mailto:info@dreamskyairways.com">info@dreamskyairways.com</a></p>
+        <p><strong>For Career:</strong> <a href="mailto:hr@dreamskyairwaysa.com">hr@dreamskyairways.com</a></p>
+</div> 
    
-      </div>
+
+
 
 
  <div class="col-md-3 col-sm-6 col-xs-12">
@@ -500,8 +501,7 @@ Email 2 -->
      target="_blank"
      rel="noopener noreferrer"
      style="text-decoration: none; color: inherit;">
-    Dream Sky Airways,<br/>
-    A-43, Noida Sector-63, Near Dainik Jagaran, Gautam Budh Nagar – 201301
+
   </a>
 
   <!-- Embedded Google Map -->
@@ -516,6 +516,7 @@ Email 2 -->
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
+
 </li>
 
 

@@ -16,9 +16,9 @@ include('includes/header.php');
 <!-- carousel -->
 <section id="image-carousel" class="splide" aria-label="Beautiful Images">
     <div class="splide__track">
-        <ul class="splide__list">
+        <ul class="splide__list ">
             <li class="splide__slide">
-                <img src="assets/images/2.webp" alt="" />
+                <img src="assets/images/skyy.jpg.jpg" alt="" />
             </li>
             <li class="splide__slide">
                 <img src="assets/images/3.webp" alt="" />
@@ -27,7 +27,46 @@ include('includes/header.php');
     </div>
 </section>
 
-<div class="container" style="margin-top:60px;">
+<style>
+    /* Responsive track height */
+.splide__track {
+    height: 60vh;            
+    max-height: 659px;       
+    overflow: hidden;
+    border-radius: 12px;     }
+
+/* Responsive image styling */
+#image-carousel .splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .splide__track {
+        height: 50vh;         /* Reduce height for smaller screens */
+    }
+}
+#image-carousel .splide__slide img {
+    height:100%;
+    width: 100%;
+    /* object-fit: cover; */
+    display: block;
+    margin: 0 auto;
+}
+.splide__track{
+    height: 700px;
+}/* Responsive adjustment for small devices */
+@media (max-width: 768px) {
+    .splide__track {
+        height: 50vh;
+    }
+}
+
+</style>
+<div class="contai  ner" style="margin-top:10px;">
     <div class="ho_sectionarea col-md-12 lgmtop_minus">
         <div class="super-offers-topbar offeringcol">
             <div class="row">
