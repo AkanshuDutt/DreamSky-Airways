@@ -11,7 +11,7 @@ include('includes/header.php');
         background-image: url('assets/images/breadcumb-bg.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        height: 350px;
+        height:500px;
     }
     .breadcumb h2{
         position: absolute;
@@ -62,7 +62,7 @@ include('includes/header.php');
 
 <div class="breadcumb">
     <!--<img src="assets/images/breadcumb-bg.jpg" width="100%">-->
-    <h2>OUR SERVICES </h2>
+    <!-- <h2>OUR SERVICES </h2> -->
 </div>
 
 

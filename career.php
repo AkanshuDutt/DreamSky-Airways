@@ -7,17 +7,71 @@ $pageRobots = 'index,follow';
 include('includes/header.php');
 ?>
 <style>
-    .breadcumb{
+    /* .breadcumb{
         background-image: url('assets/images/breadcumb-bg.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         height: 350px;
-    }
-    .breadcumb h2{
+    } */
+    /* .breadcumb {
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 480px;
+    width: 100%;
+} */
+    /* background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470'); */
+/* .breadcumb {
+
+       background-image: url('assets/images/career.jpg');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 480px;
+    color: white;
+    align-items:center;
+    justify-content:center;
+} */
+/* 
+.breadcumb::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* Optional dark overlay */
+.breadcumb {
+    background-image: url('assets/images/career.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: white; /* ya #fff based on theme */
+
+    width: 100%;
+    height: 490px; /* image ke aspect ratio ke according adjust */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.breadcumb h2 {
+    position: relative;
+    font-size: 48px;
+    font-weight: 700;
+    z-index: 1;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+    /* .breadcumb h2{
         position: absolute;
         top:40%;
         left: 10%;
         color: white;
+
     }
     p{
         font-size: 16px;
@@ -28,12 +82,36 @@ include('includes/header.php');
     
     .btn-primary{
         margin: 10px;
-    }
+    } */
+         .breadcumb h2 {
+    position: relative;
+    color: #fff;
+    font-size: clamp(32px, 8vw, 56px);
+    font-weight: 700;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    margin: 0;
+    animation: fadeInDown 1s ease-out;
+      align-items:center;
+    justify-content:center;
+  }
+
+       .breadcumb p {
+    position: relative;
+    color: #f0f0f0;
+    font-size: clamp(16px, 3vw, 20px);
+    margin-top: 10px;
+    z-index: 1;
+    animation: fadeInUp 1s ease-out 0.3s;
+    animation-fill-mode: backwards;
+      align-items:center;
+    justify-content:center;
+  }
 </style>
 
 <div class="breadcumb">
-    <!--<img src="assets/images/breadcumb-bg.jpg" width="100%">-->
-    <h2>CAREER </h2>
+    <!-- <img src="assets/images/breadcumb-bg.jpg" width="100%"> -->
+    <!-- <h2>CAREER </h2 > -->
 </div>
 
 

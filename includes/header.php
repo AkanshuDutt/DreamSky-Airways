@@ -142,7 +142,7 @@ if (isset($pageRobots) && $pageRobots) {
         }
 
         .goog-te-gadget .goog-te-combo {
-            margin: 5px 3px 0 2px;
+            margin: 3px 3px 0 2px;
         }
 
         .goog-te-combo::-webkit-scrollbar {
@@ -163,12 +163,13 @@ if (isset($pageRobots) && $pageRobots) {
            /* Top Info Bar */
       .top-bar {
         background: #032b91;
-        border-bottom: 1px solid #ddd;
+        /* border-bottom: 1px solid #ddd; */
         font-size: 14px;
         font-weight: bold;
         color: white;
-        padding: 8px 0;
+        padding: 2px 0;
         font-family: 'Quicksand', sans-serif;
+        margin-bottom:'0px'
       }
       .top-bar .info-item {
         margin-right: 25px;
@@ -329,7 +330,6 @@ if (isset($pageRobots) && $pageRobots) {
                   <li><a href="service.php">Services</a></li>
                   <li><a href="career.php">Career</a></li>
                   <li><a href="faq-page.php">FAQ</a></li>
-                  <li><a href="Contact-Enquery-Form.php">Enquery</a></li>
                   <li><a href="contact-us.php">Contact</a></li>
                 </ul>
               </div>
