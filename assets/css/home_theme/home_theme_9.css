@@ -867,7 +867,7 @@ span.theme2_imgbox {display: block; width: 100%; text-align: center;}
   }
   .three-col-wrap {border-bottom: 1px solid #e5e4e4;}
   .why_with {text-align: left;}
-  .text-right {text-align: left;}
+  .text-right {text-align: right;}
   .ho_book_flt {text-align: left; font-size: 14px;}
   .ho_slider-carousel img {height: 100%; overflow: hidden; object-fit: cover;}
   .ho_heading-2,
