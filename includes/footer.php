@@ -1,9 +1,5 @@
+<link href="assets/css/footer_theme/footer_theme_9.css" rel="stylesheet">
 
-   <!--Our Why section end-->
-   <link href="assets/css/footer_theme/footer_theme_9.css" rel="stylesheet">
-    <footer class="fo_footer">
-        <div class="container">
-            <div class="row">
                
 <style>
     .row {
@@ -27,43 +23,6 @@
         box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 </style>
-<!-- <a href="https://wa.me/918506035512" class="floating-whatsapp" target="_blank" rel="noopener noreferrer">
-  <i class="fab fa-whatsapp"></i>
-</a> -->
-
-<!-- <a href="https://wa.me/+918750610304" class="floating-whatsapp" target="_blank" rel="noopener noreferrer">
-  <i class="fab fa-whatsapp"></i>
-</a>
-
-
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-
-
-
-
-
-
-<a href="tel:+918750610304" class="floating-call">
-</a>
-
-
-<span class="social-toggle" onclick="document.querySelector('.fo_social-media-col').style.display = (document.querySelector('.fo_social-media-col').style.display === 'block') ? 'none' : 'block';">
-          <i class="fas fa-plus-circle"></i> Social Media
-        </span>
-
-        <div class="fo_social-media-col">
-          <ul class="list-inline">
-            <li class="facebookbg"> <a target="_blank" href="#"><span class="fa fa-facebook"></span></a></li>
-            <li class="twitter_img"> <a target="_blank" href="#"><img src="assets/images/theme9_images/twitter.png" width="31"></a></li>
-            <li class="instagrambg"> <a target="_blank" href="#"><span class="fa fa-instagram"></span></a></li>
-            <li class="linkedinbg"> <a target="_blank" href="#"><span class="fa fa-linkedin"></span></a></li>
-            <li class="youtubebg"> <a target="_blank" href="#"><span class="fa fa-youtube"></span></a></li>
-          </ul>
-        </div>
-
- -->
 
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
@@ -73,20 +32,9 @@
   <i class="fab fa-whatsapp"></i>
 </a>
 
-<!-- Floating Call -->
-<!-- <a href="tel:+918750610304" class="floating-icon call">
-  <i class="fas fa-phone"></i>
-</a> -->
 <a href="tel:+918750610304" class="floating-icon call" title="Call Now" rel="noopener">
   <i class="fas fa-phone"></i>
 </a>
-
-
-
-
-
-
-
 
 <!-- Floating Social Toggle -->
 <div class="floating-icon social-toggle" onclick="toggleSocialIcons()">
@@ -100,7 +48,6 @@
     <li><a href="https://www.instagram.com/dreamskyairways/profilecard/?igsh=aTNtbWw0emNvcDFv"><i class="fab fa-instagram"></i></a></li>
     <li><a href="https://youtube.com/@dreamskyairways?si=pQLQuRttBlG401Pd"><i class="fab fa-youtube"></i></a></li>
     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-;
   </ul>
 </div>
 
@@ -165,344 +112,62 @@
   }
 </script>
 
+<footer class="fo_footer">
+  <div class="container">
+    <div class="row">
 
+      <!-- Column 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="fo_footer_heading6">
+          <h4>Dream Sky Airways Pvt. Ltd.</h4>
+          <p style="color: orange; font-weight: bold;">The Company is recognized by NCT & MCA, MSME Certified.</p>
+          <p>A-43, Noida Sector-63 Near by Dainik Jagaran Gautam Budh Nagar 201301</p>
+          <p><strong>Phone:</strong> +918750610304 </p>
+          <p><strong>For Holidays Support:</strong> holidays@dreamskyairways.com </p>
+          <p><strong>For Info:</strong> info@dreamskyairways.com</p>
+          <p><strong>For Career:</strong> hr@dreamskyairways.com</p>
+        </div>
+      </div>
 
-
-
- <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="fo_footer_heading6">
-        <h4>Dream Sky Airways Pvt. Ltd.</h4>
-        <p style="color: orange; font-weight: bold;">The Company is recognizes NCT & MCA, MSME Certified.</p>
-        <p> A-43, Noida Sector-63 Near by Dainik Jagaran Gautam Budh Nagar 201301</p>
-        <p><strong>Phone: </strong> +918750610304 </p>
-        <p><strong>For Holidays Support:</strong><a href="mailto:holidays@dreamskyairways.com";">holidays@dreamskyairways.com</a></p>
-        <p><strong>For Info:</strong><a href="mailto:info@dreamskyairways.com">info@dreamskyairways.com</a></p>
-        <p><strong>For Career:</strong> <a href="mailto:hr@dreamskyairwaysa.com">hr@dreamskyairways.com</a></p>
-</div> 
-   
-
-
-
-
- <div class="col-md-3 col-sm-6 col-xs-12">
-
-                    <div class="fo_footer_heading6">
-<!--
-                        <h4>AboutUs</h4>
-
-
-                        <div class="ho_footer-navbar">
-                            <ul class="list-unstyled clearfix">
-                                <li><i class="icofont-rounded-right"></i> <a href="who-we-are.php"
-                                        target="_self"> Who we are</a></li> -->
-                                <!-- <li><i class="icofont-rounded-right"></i> <a href="why-choose-us.php"
-                                        target="_self"> Why Choose us</a></li> -->
-                                <!-- <li><i class="icofont-rounded-right"></i>  -->
-                                <!-- <a href="our-services.php"target="_self"> Our Services</a> -->
-                                 <!-- <a href="service.php"> Our Services</a>
-                                     </li>
-                                     <li> <i class="icofont-rounded-right"></i>
-                                 <a href="servicee.php"> Carrer</a>
-                            </li> -->
-                            <!-- <li><i class="icofont-rounded-right"></i>
-                            <a href="faq-page.php">FAQ</a></li>
-                            </li> -->
-                             <!-- <li><i class="icofont-rounded-right"></i>
-                            <a href="faq-page.php">Packages</a></li>
-                            </li>
- <li><i class="icofont-rounded-right"></i>
-                            <a href="faq-page.php">Packages Policy</a></li>
-
- <li><i class="icofont-rounded-right"></i>
-                            <a href="faq-page.php">Refund Policy</a></li>
-                            </li>
-
- <li><i class="icofont-rounded-right"></i>
-                            <a href="faq-page.php">Banquet Booking</a></li>
-                            </li>
-
-                            </li>
-
-
-
-                            </ul>
-                        </div> -->
-
-                    </div>
-                </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="fo_footer_heading6">
-                        <!-- <h4>IMPORTANT lINK</h4> -->
-                       <div class="ho_footer-navbar">
-    <!-- <ul class="list-unstyled clearfix"> -->
-        <!-- <li><i class="icofont-rounded-right"></i> <a href="terms-and-conditions.php" target="_self">Terms & Conditions</a></li>
-        <li><i class="icofont-rounded-right"></i> <a href="privacy-policy.php" target="_self">Privacy Policy</a></li>
-        <li><i class="icofont-rounded-right"></i> <a href="cancellations-policy.php" target="_self">Cancellation Policy</a></li>
-        <li><i class="icofont-rounded-right"></i> <a href="contact-us.php" target="_self">Contact Us</a></li>
-        <li><i class="icofont-rounded-right"></i> <a href="faq-page.php" target="_self">Frequently Asked Questions</a></li> -->
-    <!-- </ul> -->
-</div>
-
-</div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="fo_footer_heading6">
-        </span></a>
-
-       
-                            </li>
-                            <!-- <li class="instagrambg"> <a target="_blank"
-                                    href="#"> <span
-                                        class="fa fa-instagram"></span></a>
-                            </li>
-
-                            <li class="linkedinbg"> <a target="_blank" href="#"> <span
-                                        class="fa fa-linkedin"></span></a>
-                            </li>
-                            <li class="youtubebg"> <a target="_blank"
-                                    href="#"> <span
-                                        class="fa fa-youtube"></span></a>
-                            </li>
-                        </ul>  -->
-                    <!-- </div> -->
-
-
-
-
-
-
-                        <div class="ho_footer-navbar">
-                             <ul class="list-unstyled clearfix">
-                                <!-- <li><i class="icofont-rounded-right"></i> <a href="contact-us.php" target="_self"> -->
-                                             <!-- <h4>SOCIAL MEDIA</h4> -->
-
-
-                        <h4>About Us</h4>
-
-
-                        <div class="ho_footer-navbar">
-                            <ul class="list-unstyled clearfix">
-                                <li><i class="icofont-rounded-right"></i> <a href="who-we-are.php"
-                                        target="_self"> Who we are</a></li>
-                                <!-- <li><i class="icofont-rounded-right"></i> <a href="why-choose-us.php"
-                                        target="_self"> Why Choose us</a></li> -->
-                                <li><i class="icofont-rounded-right"></i>
-                                <!-- <a href="our-services.php"target="_self"> Our Services</a> -->
-                                 <a href="service.php"> Our Services</a>
-                                     </li>
-                                     <li> <i class="icofont-rounded-right"></i>
-                                 <a href="career.php"> Carrer</a>
-                            </li>
-                            <!-- <li><i class="icofont-rounded-right"></i>
-                            <a href="faq-page.php">FAQ</a></li>
-                            </li> -->
-                             <li><i class="icofont-rounded-right"></i>
-                            <a href="service.php">Packages</a></li>
-                            </li>
- <li><i class="icofont-rounded-right"></i>
-                            <a href="packagespolicy.php">Packages Policy</a></li>
-
- <li><i class="icofont-rounded-right"></i>
-                            <a href="refund.php">Refund Policy</a></li>
-                            </li>
-
- <li><i class="icofont-rounded-right"></i>
-                            <a href="banquet.php">Banquet Booking</a></li>
-                            </li>
-
-                            </li>
-
-
-
-                            </ul>
-                        </div>
-
-
-
-
-                                             
-  <!-- <div class="fo_social-media-col" >   -->
-                          <!-- <ul class="list-inline">  -->
-                             <!-- <li class="facebookbg"> <a target="_blank"  -->
-                           
-                                           <!-- class=""><img src="assets/images/theme9_images/twitter.png" -->
-                                   <!-- CT US</a></li> -->
-                                <!-- <li><i class="icofont-rounded-right"></i> <a href="faq-page.php" target="_self">
-                                        Frequently Asked Questions </a></li>                 <span class="fa fa-facebook"></span></a>
-                            </li> -->
-                            <!-- <li class="twitter_img"> <a target="_blank" -->
-                                     <!-- href="#"> <span -->
-                            <!-- </ul>  -->
-
-<!-- <span class="social-toggle" onclick="document.querySelector('.fo_social-media-col').style.display = (document.querySelector('.fo_social-media-col').style.display === 'block') ? 'none' : 'block';">
-          <i class="fas fa-plus-circle"></i> Social Media
-        </span>
-
-        <div class="fo_social-media-col">
-          <ul class="list-inline">
-            <li class="facebookbg"> <a target="_blank" href="#"><span class="fa fa-facebook"></span></a></li>
-            <li class="twitter_img"> <a target="_blank" href="#"><img src="assets/images/theme9_images/twitter.png" width="31"></a></li>
-            <li class="instagrambg"> <a target="_blank" href="#"><span class="fa fa-instagram"></span></a></li>
-            <li class="linkedinbg"> <a target="_blank" href="#"><span class="fa fa-linkedin"></span></a></li>
-            <li class="youtubebg"> <a target="_blank" href="#"><span class="fa fa-youtube"></span></a></li>
+      <!-- Column 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="fo_footer_heading6">
+          <h4>About Us</h4>
+          <ul class="list-unstyled">
+            <li><a href="who-we-are.php">Who we are</a></li>
+            <li><a href="service.php">Our Services</a></li>
+            <li><a href="career.php">Career</a></li>
+            <li><a href="service.php">Packages</a></li>
+            <li><a href="packagespolicy.php">Packages Policy</a></li>
+            <li><a href="refund.php">Refund Policy</a></li>
+            <li><a href="banquet.php">Banquet Booking</a></li>
           </ul>
-        </div> -->
+        </div>
+      </div>
 
+      <!-- Column 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="fo_footer_heading6">
+          <h4>Important Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="terms-and-conditions.php">Terms & Conditions</a></li>
+            <li><a href="privacy-policy.php">Privacy Policy</a></li>
+            <li><a href="cancellations-policy.php">Cancellation Policy</a></li>
+            <li><a href="contact-us.php">Contact Us</a></li>
+            <li><a href="faq-page.php">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+      </div>
 
-
-
-<!-- <div class="fo_social-media-col">
-                        <ul class="list-inline">
-                            <li class="facebookbg"> <a target="_blank"
-                                    href="#">
-                                    <span class="fa fa-facebook"></span></a>
-                            </li>
-                            <li class="twitter_img"> <a target="_blank"
-                                    href="#"> <span
-                                        class=""><img src="assets/images/theme9_images/twitter.png"
-                                            width="31"></span></a>
-                            </li>
-                            <li class="instagrambg"> <a target="_blank"
-                                    href="#"> <span
-                                        class="fa fa-instagram"></span></a>
-                            </li>
-
-                            <li class="linkedinbg"> <a target="_blank" href="#"> <span
-                                        class="fa fa-linkedin"></span></a>
-                            </li>
-                            <li class="youtubebg"> <a target="_blank"
-                                    href="#"> <span
-                                        class="fa fa-youtube"></span></a>
-                            </li>
-                        </ul>
-                    </div>  -->
-
-
-  </div>
-</div>
-                </div>
-
-<!-- <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="fo_footer_heading6 foo-common">
-                        <h4 class="uppercase">GET IN TOUCH</h4>
-                        <div class="ho_footer-address">
-                            <ul class="list-unstyled">
-                                <li>Dream Sky Airways Pvt. Ltd. The Company is recognizes MCA, MSME & NCT Certified.</li>
-                                <li>
-                                    <i class="icofont-google-map"></i> Dream Sky Airways,<br/> A-43, Noida Sector-63 Near by Dainik Jagaran Gautam Budh Nagar 201301
-                                    </li>
-                                     <li><i class="icofont-whatsapp"></i> <a href="tel:8750610304"> +91 8750610304
-                                    </a></li>
-                               
-                                <li><i class="icofont-phone"></i> <a href="tel:911204992853" > +91-120-499-2853
-                                    </a></li>
-                                     <li><i class="icofont-envelope-open"></i> <a href="mailto:info@dreamskyairways.com" > info@dreamskyairways.com
-                                    </a></li>
-                                    <li><i class="icofont-envelope-open"></i> <a href="mailto:hr@dreamskyairways.com" > hr@dreamskyairways.com
-                                    </a></li>
-                            </ul>
-                        </div> -->
-
- <div>
-     <div class="col-md-3 col-sm-6 col-xs-12 flex">
-                    <div class="fo_footer_heading6">
-                        <h4>IMPORTANT lINK</h4>
-                       <div class="ho_footer-navbar">
-    <ul class="list-unstyled clearfix">
-        <li><i class="icofont-rounded-right"></i> <a href="terms-and-conditions.php" target="_self">Terms & Conditions</a></li>
-        <li><i class="icofont-rounded-right"></i> <a href="privacy-policy.php" target="_self">Privacy Policy</a></li>
-        <li><i class="icofont-rounded-right"></i> <a href="cancellations-policy.php" target="_self">Cancellation Policy</a></li>
-        <li><i class="icofont-rounded-right"></i> <a href="contact-us.php" target="_self">Contact Us</a></li>
-        <li><i class="icofont-rounded-right"></i> <a href="faq-page.php" target="_self">Frequently Asked Questions</a></li>
-    </ul>
-</div>
-
-</div>  
-   
-                <!-- Address -->
-                 <!-- <li>
-                    <i class="icofont-google-map"></i>
-                    Dream Sky Airways,<br/>
-                    A-43, Noida Sector-63 Near by Dainik Jagaran Gautam Budh Nagar 201301
-                </li>  -->
- <!-- <i class="icofont-google-map"></i>
-  <a href="https://www.google.com/maps/place/A-43,+Sector+63,+Noida,+Uttar+Pradesh+201301" target="_blank" rel="noopener noreferrer">
-    Dream Sky Airways,<br/>
-    A-43, Noida Sector-63 Near by Dainik Jagaran Gautam Budh Nagar 201301
-  </a>
-</li> <li> -->
- 
-
-                <!-- WhatsApp -->
-
-
-
-                <!-- Phone -->
- <!-- <li>
-  <i class="icofont-phone"></i>
-  <a href="tel:+911204992853">
-    +91-120-499-2853
-  </a>
-</li> -->
-
-<!-- <li>
-  <i class="icofont-phone"></i>
-  <a href="tel:+911204992853" onclick="window.location.href='tel:+911204992853'">
-    +91-120-499-2853
-  </a>
-</li> -->
-
-
-
-<!-- <li>
-  <i class="icofont-envelope-open"></i>
-  <a href="mailto:info@dreamskyairways.com">
-    info@dreamskyairways.com
-  </a>
-</li>
-
-
-
-Email 2 -->
-<!-- <li>
-  <i class="icofont-envelope-open"></i>
-  <a href="mailto:hr@dreamskyairways.com">
-    hr@dreamskyairways.com
-  </a>
-</li> -->
-<!-- <div class="col-md-4 col-sm-6 col-xs-12 flex">
-                    <div class="fo_footer_heading6">
-                        <h4> lINK</h4> -->
- <!-- <li>
-  <i class="icofont-google-map"></i>
-  <a href="https://www.google.com/maps/place/A-43,+Sector+63,+Noida,+Uttar+Pradesh+201301"
-     target="_blank"
-     rel="noopener noreferrer">
-    Dream Sky Airways,<br/>
-    A-43, Noida Sector-63 Near by Dainik Jagaran Gautam Budh Nagar 201301
-  </a>
-   <div style="margin-top: 10px; border-radius: 10px; overflow: hidden;">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.070144564623!2d77.36980007548866!3d28.625421075662584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce56e693b7e81%3A0x5a0f89b88ea3f07b!2sA-43%2C%20Sector%2063%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1690635503795!5m2!1sen!2sin"
-      width="full"
-      height="200"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
- </div>
-</li>  -->
-
+      <!-- Column 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="fo_footer_heading6">
+          <h4>MAP</h4>
+          <ul class="list-inline">
+           
 <li style="list-style: none;">
-  <i class="icofont-google-map" style="margin-right: 5px;"></i>
-  <a href="https://www.google.com/maps/place/A-43,+Sector+63,+Noida,+Uttar+Pradesh+201301"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="text-decoration: none; color: inherit;">
+  
 
-  </a>
 
   <!-- Embedded Google Map -->
   <div style="margin-top: 10px; border-radius: 10px; overflow: hidden;">
@@ -516,123 +181,24 @@ Email 2 -->
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
-
 </li>
 
-
-
- <div class="container" style="max-width: 1000px;">
-    <div class="row fo_copy_right  ">
-      <div class="col-md-5 col-sm-4 col-xs-12 fo_copy text-start">
-        <!-- <p class="mb-0"> -->
-          © Copyright Dream Sky Airways 2024. All Rights Reserved
-        </p>
+          </ul>
+        </div>
       </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Floating WhatsApp Icon -->
-<!-- <a href="https://wa.me/+91 87506 10304" class="floating-whatsapp" target="_blank" rel="noopener noreferrer">
-  <i class="fab fa-whatsapp"></i>
-</a> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="col-md-3 col-sm-6 col-xs-12"> -->
-                    <!-- <div class="fo_footer_heading6">
-                        <h4>FOLLOW US</h4>
- <div class="fo_social-media-col" >
-                        <ul class="list-inline">
-                            <!-- <li class="facebookbg"> <a target="_blank"
-                                    href="#">
-                                    <span class="fa fa-facebook"></span></a>
-                            </li> -->
-                            <!-- <li class="twitter_img"> <a target="_blank"
-                                    href="#"> <span
-                                        class=""><img src="assets/images/theme9_images/twitter.png"
-                                            width="31"></span></a>
-                            </li>
-                            <li class="instagrambg"> <a target="_blank"
-                                    href="#"> <span
-                                        class="fa fa-instagram"></span></a>
-                            </li>
-
-                            <li class="linkedinbg"> <a target="_blank" href="#"> <span
-                                        class="fa fa-linkedin"></span></a>
-                            </li>
-                            <li class="youtubebg"> <a target="_blank"
-                                    href="#"> <span
-                                        class="fa fa-youtube"></span></a>
-                            </li>
-                        </ul> -->
-                    <!-- </div> -->
-
-
-
-
-
-
-
-            </ul>
-        </div>
     </div>
-</div>
 
-                    </div>
-                </div>
-             
-            </div>
-        </div>
-       
+    <!-- Copy Right Row -->
+    <div class="row mt-3">
+      <div class="col-12 text-center">
+        © Copyright Dream Sky Airways 2024. All Rights Reserved
+      </div>
+    </div>
 
-  </footer>
+  </div>
+</footer>
+
 
     <!-- <section class="fo_copyright">
         <div class="container">

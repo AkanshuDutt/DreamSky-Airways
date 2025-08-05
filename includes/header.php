@@ -14,7 +14,6 @@ if (isset($pageCanonical) && $pageCanonical) {
     echo '<link rel="canonical" href="' . htmlspecialchars($pageCanonical) . '">';
 }
 
-// If meta robots content is specified, include robots meta tag
 if (isset($pageRobots) && $pageRobots) {
     echo '<meta name="robots" content="' . htmlspecialchars($pageRobots) . '">';
 }
@@ -167,7 +166,7 @@ if (isset($pageRobots) && $pageRobots) {
         font-size: 14px;
         font-weight: bold;
         color: white;
-        padding: 2px 0;
+        padding: 5px 0;
         font-family: 'Quicksand', sans-serif;
         margin-bottom:'0px'
       }
@@ -187,10 +186,10 @@ if (isset($pageRobots) && $pageRobots) {
         float: right;
         background: red;
         color: #fff;
-        padding: 6px 14px;
+        padding: 8px 14px;
         border-radius: 20px;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 13px;
         font-family: 'Quicksand', sans-serif;
       }
 
@@ -309,7 +308,7 @@ if (isset($pageRobots) && $pageRobots) {
       </div>
     </div>
 
-    <!-- Main Header -->
+   
     <div class="main-header">
       <div class="container">
         <div class="row">
@@ -330,6 +329,7 @@ if (isset($pageRobots) && $pageRobots) {
                   <li><a href="service.php">Services</a></li>
                   <li><a href="career.php">Career</a></li>
                   <li><a href="faq-page.php">FAQ</a></li>
+                  <li><a href="Contact-Enquery-Form.php">Inquery</a></li>
                   <li><a href="contact-us.php">Contact</a></li>
                 </ul>
               </div>
@@ -342,7 +342,7 @@ if (isset($pageRobots) && $pageRobots) {
       </div>
     </div>
 
-    <!-- Offcanvas Menu -->
+  
     <div class="offcanvas-menu" id="mobileMenu">
       <ul>
       <li class="active"><a href="./">Home</a></li>
@@ -350,7 +350,10 @@ if (isset($pageRobots) && $pageRobots) {
                   <li><a href="service.php">Services</a></li>
                   <li><a href="career.php">Career</a></li>
                   <li><a href="faq-page.php">FAQ</a></li>
+                  <li><a href="Contact-Enquery-Form.php">Inquery</a></li>
                   <li><a href="contact-us.php">Contact</a></li>
+                  
+
         <li><i class="fa fa-phone"></i> <a href="tel:8750610304" style="color:#fff;">  +91-875-061-0304 </a></li>
         <li><i class="fa fa-envelope"></i> <a href="mailto:info@dreamskyairways.com" style="color:#fff;"> info@dreamskyairways.com </a></li>
         <li>
