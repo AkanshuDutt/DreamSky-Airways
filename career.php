@@ -119,7 +119,7 @@ include('includes/header.php');
   
         <div class="clearfix"></div>
     <div class="container inner-container-static inner-content">
-        <h1 style="color:blue;"><strong><em>Career Opportunities </em></strong></h1>
+        <h1 style="color:#0B56A8;"><strong><em>Career Opportunities </em></strong></h1>
         <p>
             If you wonder how the aviation industry works or how many people are required to make airways travel safe and secure. 
             Then making a career in airways can be a good option, where you get the chance to travel around the world but you also get to learn a lot about many things like
