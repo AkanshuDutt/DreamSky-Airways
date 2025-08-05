@@ -167,7 +167,7 @@ if (isset($pageRobots) && $pageRobots) {
         font-size: 14px;
         font-weight: bold;
         color: white;
-        padding: 2px 0;
+        padding: 12px 0;
         font-family: 'Quicksand', sans-serif;
         margin-bottom:'0px'
       }
@@ -204,7 +204,7 @@ if (isset($pageRobots) && $pageRobots) {
         align-items: center;
       }
       .main-header .logo img {
-        height: 80px;
+        height: 70px;
       }
       .main-header .nav > li > a {
         color: #333;
@@ -218,7 +218,7 @@ if (isset($pageRobots) && $pageRobots) {
 
       /* Offcanvas Menu */
       .mobile-toggle {
-        font-size: 22px;
+        font-size: 20px;
         cursor: pointer;
         display: none;
       }
@@ -290,9 +290,12 @@ if (isset($pageRobots) && $pageRobots) {
         <div class="row">
           <div class="col-sm-9 col-xs-12">
             <span class="info-item emailId"
-              ><i class="fa fa-map-marker"></i> A-43, Noida Sector-63, U.P</span
-            >
-            <span class="info-item emailId"
+              ><i class="fa fa-map-marker"></i>
+              <a href="https://www.google.com/maps?q=A-43,+Sector+63,+Noida,+Uttar+Pradesh" target="_blank" style="color: #fff;">
+    A-43, Noida Sector-63, U.P
+  </a>
+</span>
+            <!-- <span class="info-item emailId"
               ><i class="fa fa-envelope"></i> <a href="mailto:info@dreamskyairways.com" style="color:#fff;"> info@dreamskyairways.com </a></span
             >
             <span class="info-item"
@@ -300,7 +303,43 @@ if (isset($pageRobots) && $pageRobots) {
             >
             <span class="info-item "
               ><i class="fa fa-whatsapp"></i> <a href="tel:8750610304" style="color:#fff;">+91-8750610304</a></span
-            >
+            > -->
+            <!-- Email -->
+<!-- <span class="info-item emailId">
+  <i class="fa fa-envelope"></i>
+  <a href="mailto:dreamskyairways@gmail.com" style="color:#fff;">dreamskyairways@gmail.com</a>
+</span> -->
+ <!-- <span> -->
+    <!-- <i class="fa fa-envelope"></i>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@dreamskyairways.com" target="_blank" style="color:#fff;">
+  info@dreamskyairways.com
+</a>
+
+
+  </span> -->
+<!-- Phone -->
+<!-- <span class="info-item">
+  <i class="fa fa-phone"></i>
+  <a href="tel:+911204992853" style="color:#fff;">Helpline:120-499-2853</a>
+</span> -->
+<span class="info-item" style=" gap: 40px; , ">
+  <i class="fa fa-phone" style="font-size: 11px;"></i>
+  <a href="tel:+911204992853" style="color: #fff;">Helpline: 120-499-2853</a>
+</span>
+
+<!-- WhatsApp -->
+<span class="info-item">
+  <!-- <i class="fa fa-whatsapp"></i> -->
+  <i class="fa-brands fa-whatsapp"></i>
+  <a href="https://wa.me/918750610304" target="_blank" style="color:#fff;">+91-8750610304</a>
+</span>
+<span> 
+     <i class="fa fa-envelope"></i>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@dreamskyairways.com" target="_blank" style="color:#fff;">
+  info@dreamskyairways.com
+</a>
+    </span>
+
           </div>
           <div class="col-sm-3 hidden-xs text-right">
             <a href="apply-for-job.php" class="apply-btn">Apply for Job</a>
