@@ -23,17 +23,135 @@ include('includes/header.php');
             <li class="splide__slide">
                 <img src="assets/images/3.webp" alt="" />
             </li>
+            <li class="splide__slide">
+                <img src="assets/images/home.jpg" alt="" />
+            </li>
+              <!-- <li class="splide__slide">
+                <img src="assets/images/pack.jpg" alt="" /> -->
+            <!-- </li> -->
+             
         </ul>
     </div>
 </section>
+<!-- Include Splide JS & CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<!-- Splide Initialization Script -->
+<!-- <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#image-carousel', {
+         type: 'fade', 
+  rewind: true, 
+      type: 'loop',
+      autoplay: true,
+      interval: 2000,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+    
+    }).mount();
+  });
+</script> -->
+<!-- <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#image-carousel', {
+      type: 'slide',         // Normal slide (no infinite loop)
+      rewind: true,          // Go back to first after last
+      autoplay: true,
+      interval: 2000,
+      speed: 1000,           // Smooth slide transition
+      pauseOnHover: false,
+      pauseOnFocus: false,
+    }).mount();
+  });
+</script> -->
+<!-- <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#image-carousel', {
+      type: 'loop',          // Infinite loop
+      autoplay: true,        // Auto slide
+      interval: 2000,        // 2 seconds
+      speed: 1000,           // Smooth transition
+      easing: 'ease-in-out', // Smooth effect
+      pauseOnHover: false,
+      pauseOnFocus: false,
+    }).mount();
+  });
+</script> -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const splide = new Splide('#image-carousel', {
+      type: 'slide',          // Use slide instead of loop
+      rewind: true,           // Go back to first after last
+      autoplay: true,
+
+      speed: 1000,
+      easing: 'ease-in-out',
+      pauseOnHover: false,
+      pauseOnFocus: false,
+    });
+
+    let currentIndex = 0;
+
+    splide.on('move', (newIndex) => {
+      currentIndex = newIndex;
+    });
+
+    splide.on('autoplay:playing', () => {
+      if (currentIndex === splide.length - 1) {
+        splide.Components.Autoplay.pause(); // Pause at last
+        // setTimeout(() => {
+        //   splide.go(0); // Go to first
+        //   setTimeout(() => {
+        //     splide.Components.Autoplay.play(); // Resume autoplay
+        //   }); // Wait for transition
+        // }); // Pause 2 sec on last slide
+      }
+    });
+
+    splide.mount();
+  });
+</script>
+
+
+
 
 <style>
     /* Responsive track height */
-.splide__track {
+/* .splide__track {
     height: 60vh;            
-    max-height: 659px;       
+    height: 499px;       
     overflow: hidden;
-    border-radius: 12px;     }
+    border-radius: 12px;
+
+} */
+    /* .splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.splide__track {
+  height: 500px; /* or your desired fixed height */
+  /* overflow: hidden; */
+  /* border-radius: 12px; */
+ */
+}
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+    .splide__track img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* Makes the image fill the box while maintaining aspect ratio */
+  object-position: top center; /* Aligns image at the top, centered horizontally */
+  border-radius: 12px;     /* Optional: match container rounding */
+}
+
 
 /* Responsive image styling */
 #image-carousel .splide__slide img {
@@ -270,7 +388,7 @@ include('includes/header.php');
                                             </div>
                                         </div>
                                         <div class="col-md-7">
-                                            <div class="ho_content_right">
+                                            <div class="ho_content_right">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
                                                 <a href="#">
                                                     <h3>Hotel</h3>
                                                     <div class="ho_shortd">
@@ -376,7 +494,7 @@ include('includes/header.php');
             <div class="owl-carousel advertisement">
                 <div class="item">
                     <div class="ad_img">
-                        <img src="assets/images/Banner.png"
+                        <img src="assets/images/Banner.png">
                             alt="home" title="home">
                     </div>
                 </div>
@@ -1804,14 +1922,14 @@ include('includes/header.php');
 </style>
 
 <!--Our Why section srart-->
-<div class="theme2_why-we">
+<!-- <div class="theme2_why-we">
     <div class="container">
         <div class="footer-list">
             <div class="row">
                 <div class="col-md-4 col-sm-6 why_choose">
                     <h4></h4>
                     <p></p>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
