@@ -7,6 +7,44 @@ $pageRobots = 'index,follow';
 include('includes/header.php');
 ?>
 
+<div class="breadcumb">
+  <div class="slideshow">
+    <!-- <img src="assests/images/tcs.png" alt="Travel Destination 1" class="active"> -->
+	 <img src="assets/images/tcs.png" alt="Travel Destination 1" class="active">
+
+  </div>
+
+</div>
+<style>
+.breadcumb {
+  width: 1265px;
+  height: 100%;
+  background-color: #f5f5f5;
+  padding: 0px 0;
+  text-align: center;
+}
+
+.slideshow {
+  /* max-width: 100%; */
+  overflow: hidden;
+}
+
+.slideshow img {
+  width: 100%;
+  /* max-width: 800px; */
+  height: auto;
+  display: block;
+  height: 78vh; /* 👈 Fit image height to 60% of screen */
+  object-fit: cover; 
+  margin: 0 auto;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slideshow img.active {
+  opacity: 1;
+}
+</style>
+
 <div class="main-field static-page-container mobile_tabp0">
     <h3 class="pages_hed heading-page">TERMS & CONDITIONS</h3>
         <div class="clearfix"></div>

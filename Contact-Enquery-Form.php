@@ -155,7 +155,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </style>
 
 <div class="breadcumb text-center">
-    <h2>PACKAGE INQUIRY</h2>
+    <h2>PACKAGE ENQUIRY</h2>
 </div>
 
 <section class="wrapper_inner mt-5 mb-5" style="margin:0px 0;">
@@ -223,7 +223,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             </div>
                             <div class="row marT10">
                                 <div class="col-md-12 pedT20 cont_submit">
-                                    <input type="submit" value="Submit Inquiry" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Loading...">
+                                    <input type="submit" value="Submit Enquiry" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Loading...">
                                 </div>
                             </div>
                         </form>
