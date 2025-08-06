@@ -136,7 +136,7 @@ include('includes/header.php');
   /* overflow: hidden; */
   /* border-radius: 12px; */
  */
-}
+
 .splide__slide img {
   width: 100%;
   height: 100%;
@@ -1984,6 +1984,9 @@ include('includes/header.php');
         margin: 15px auto;
     }
 </style>
+
+
+
 
 
 

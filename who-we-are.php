@@ -129,7 +129,7 @@ include('includes/header.php');
 
   .inner-content p {
     font-size: clamp(14px, 3vw, 16px);
-    color: #666;
+    color: black;
     line-height: 1.6;
     margin-bottom: clamp(10px, 2vw, 15px);
   }
@@ -247,16 +247,138 @@ include('includes/header.php');
   <h2>ABOUT US</h2>
   <!-- <p>Discover Your Journey with Dream Sky Airways</p> -->
 </div>
-
 <div class="main-field static-page-container mobile_tabp0">
-  <h3 class="pages_hed heading-page">About Dream Sky Airways</h3>
-  <div class="clearfix"></div>
+  <h3 class="pages_hed heading-page">About Dream Sky Airways</h3></div>
+<div class="main-field static-page-container mobile_tabp0">
+  <!-- <h3 class="pages_hed heading-page">About Dream Sky Airways</h3> -->
+  <!-- <div class="clearfix"></div> -->
   <div class="container inner-container-static inner-content">
     <h1><strong><em>Dream Sky Airways Pvt Ltd</em></strong></h1>
-    <p>Dream Sky Airways Pvt. Ltd. is recognized by MCA, MSME & NCT Certified.</p>
-    <p>At Dream Sky Airways Services, we are committed to providing free assistance to those in search of their ideal careers in the aviation sector. Our main objective is to help you fulfill your career goals and offer outstanding job placement services while providing the best travel packages and services.</p>
-    <p>Dream Sky Airways was founded with a vision to revolutionize the travel industry by offering unique and personalized travel experiences. With years of experience in aviation, we recognized the growing demand for a service that not only transports passengers but also enriches their journeys. Our commitment to excellence and innovation has allowed us to expand our services to include not just tours and travel, but also specialized job placement services for those looking to soar in the aviation field.</p>
-    <p>We have the knowledge and experience to match bright people like you with the best career prospects thanks to our extensive network of contacts and in-depth knowledge of the aviation business. Whether you work as a pilot, member of the cabin crew, ground crew, or in any other aviation-related capacity, we are dedicated to creating opportunities that support your professional objectives.</p>
+    <p style="font-size: 16px; font-weight: bold;" >Dream Sky Airways Pvt. Ltd. is recognized by MCA, MSME & NCT Certified & Established in 2018. </p>
+    <!-- <p>Established in 2018 | MCA, MSME & NCT Certified</p> -->
+    <p>At Dream Sky Airways Services, we are committed to providing free assistance to those in search of their ideal careers in the aviation sector. Our main objective is to help you fulfill your career goals and offer outstanding job placement services while providing the best travel packages and services.
+    Dream Sky Airways was founded with a vision to revolutionize the travel industry by offering unique and personalized travel experiences. With years of experience in aviation, we recognized the growing demand for a service that not only transports passengers but also enriches their journeys. Our commitment to excellence and innovation has allowed us to expand our services to include not just tours and travel, but also specialized job placement services for those looking to soar in the aviation field.
+    We have the knowledge and experience to match bright people like you with the best career prospects thanks to our extensive network of contacts and in-depth knowledge of the aviation business. Whether you work as a pilot, member of the cabin crew, ground crew, or in any other aviation-related capacity, we are dedicated to creating opportunities that support your professional objectives.</p>
+  </div>
+</div>
+</div>
+<div class="main-field static-page-container mobile_tabp0">
+  
+        <div class="clearfix"></div>
+    <div class="container inner-container-static inner-content">
+        <h1 style=""><strong><em>WHAT WE DO </em></strong></h1>
+        <p >
+            Dream Sky Airways is a rapidly growing venture that has become a household name for flight booking, travel, and tourism services. We pride ourselves on our well-established reputation for excellence in aviation and hotel management. As we expand our wings from one office in Noida to multiple outlets across India, we remain committed to providing a diverse range of services that cater to every need of our customers. At Dream Sky Airways, we are dedicated to the betterment of society, and we firmly believe in the power of doing good. This philosophy extends to every aspect of our work, from the services we provide to the way we treat our customers and employees. Our company offers a wide range of services, including aviation, hotel management, website development, SEO, and content creation. Our team of professionals is dedicated to ensuring that every customer receives the best possible service and results, no matter what their needs may be. We take pride in having some of the best staff members in the industry, who are passionate, enthusiastic, and committed to delivering exceptional results. Whether you need help with website content or want to get your tickets booked at an affordable price, we have got you covered. So, if you are looking for a reliable and professional partner for all your travel and tourism needs, look no further than Dream Sky Airways. Contact us today to learn more about our services and how we can help you achieve your goals.
+        </p>
+       
+</div>
+
+    </div>
+
+<style>
+  .section-bg {
+    background-image: url('assets/images/sky-bg.jpg'); /* 🔁 Replace with your bg image */
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+  }
+
+  .vision-box, .value-box {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .vision-box h2,
+  .value-box h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #1E3C72;
+  }
+
+  .vision-box p,
+  .value-box p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #000;
+  }
+
+  .inner-row {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .inner-row .img-box {
+    flex: 0 0 35%;
+  }
+
+  .inner-row .text-box {
+    flex: 1;
+  }
+
+  .img-box img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .inner-row {
+      flex-direction: column;
+    }
+
+    .inner-row .img-box,
+    .inner-row .text-box {
+      width: 100%;
+    }
+  }
+</style>
+
+<!-- ✅ Section with background -->
+<div class="section-bg">
+
+  <!-- ✅ OUR VALUE Box -->
+  <div class="value-box">
+    <div class="inner-row">
+      <div class="img-box">
+        <img src="assets/images/value.jpg.jpg" alt="Our Value">
+      </div>
+      <div class="text-box">
+        <h2>OUR VALUE</h2>
+        <p>
+          At Dream Sky Airways, our core values are rooted in integrity, transparency, and a deep commitment to our customers. We place our customers at the center of every decision and continuously strive to exceed their expectations. By actively listening to their feedback, we design meaningful and personalized travel experiences that reflect their needs and values. Together, we grow by building lasting relationships and creating unforgettable journeys.
+        </p>
+      </div>
+    </div>
+  </div>  
+
+  <!-- ✅ OUR VISION Box -->
+  <div class="vision-box">
+    <div class="inner-row">
+      <div class="img-box">
+        <img src="assets/images/vision.jpg" alt="Our Vision">
+      </div>
+      <div class="text-box">
+        <h2>OUR VISION</h2>
+        <p>
+          At Dream Sky Airways, our vision is to make travel more accessible and affordable for everyone. We design thoughtfully curated travel packages that meet the diverse needs and expectations of our customers. As we expand across the nation, certified travel agents at each Bhartiya Airways location will ensure personalized assistance and seamless service. We are dedicated to redefining the travel experience with trust, transparency, and affordability at its core.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
 
