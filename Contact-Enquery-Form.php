@@ -50,20 +50,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $html_content = "
         <html>
         <head>
-            <style>
-                body { font-family: 'Roboto', sans-serif; color: #333; }
-                .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
-                h2 { color: #f58120; font-family: 'Quicksand', sans-serif; text-align: center; }
-                table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-                th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
-                th { background: #f58120; color: #fff; font-family: 'Quicksand', sans-serif; }
-                td { background: #f9f9f9; }
-                .footer { margin-top: 20px; text-align: center; color: #777; }
-            </style>
+           
+       
         </head>
         <body>
             <div class='container'>
-                <h2>New Package Enquiry</h2>
+                <h2> Package Enquiry</h2>
                 <table>
                     <tr><th>Full Name</th><td>$full_name</td></tr>
                     <tr><th>Father's Name</th><td>$father_name</td></tr>
@@ -74,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <tr><th>Address</th><td>$address</td></tr>
                     <tr><th>Message</th><td>$message</td></tr>
                 </table>
-                <div class='footer'>Sent from Dream Sky Airways Enquiry Form</div>
+                <div class='footer'>Sent from Dream Sky Airways Enquiry </div>
             </div>
         </body>
         </html>";
@@ -85,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $mail->Host = 'smtp.gmail.com'; 
             $mail->SMTPAuth = true;
             $mail->Username = 'dreamskyairways@gmail.com'; 
-            $mail->Password = 'uvk5ewwxieolnguybnmobyyntwte2lf7'; 
+            $mail->Password = 'drmo oqyk xkys pfex'; 
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
@@ -100,18 +92,40 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                   $mail->send();
 
-            echo "<div style='background:#e6ffe6; padding:15px; margin:20px; border:1px solid #0a0;'>
-                    <h3>Thank you for your enquiry!</h3>
-                    <p><strong>Full Name:</strong> $full_name</p>
-                    <p><strong>Father's Name:</strong> $father_name</p>
-                    <p><strong>Email:</strong> $email</p>
-                    <p><strong>City:</strong> $city</p>
-                    <p><strong>State:</strong> $state</p>
-                    <p><strong>Contact Number:</strong> $contact</p>
-                    <p><strong>Address:</strong> $address</p>
-                    <p><strong>Message:</strong> $message</p>
-                    <p><strong>ID Proof:</strong> Uploaded successfully</p>
-                  </div>";
+            echo "
+<div id='enquiryModal' class='modal'>
+  <div class='modal-content'>
+    <span class='close' onclick='closeModal()'>&times;</span>
+    <h3>Thank you for your enquiry!</h3>
+    <p><strong>Full Name:</strong> $full_name</p>
+    <p><strong>Father's Name:</strong> $father_name</p>
+    <p><strong>Email:</strong> $email</p>
+    <p><strong>City:</strong> $city</p>
+    <p><strong>State:</strong> $state</p>
+    <p><strong>Contact Number:</strong> $contact</p>
+    <p><strong>Address:</strong> $address</p>
+    <p><strong>Message:</strong> $message</p>
+    <p><strong>ID Proof:</strong> Uploaded successfully</p>
+    <hr>
+    <p style='color: red; font-weight: bold;'>
+        🔴 <em>Note:</em> In case of emergency, please contact us at <strong>+91-8750610304</strong>.
+    </p>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('packageForm').style.display = 'none'; // Hide form
+    document.getElementById('enquiryModal').style.display = 'block'; // Show modal
+  });
+
+  function closeModal() {
+    document.getElementById('enquiryModal').style.display = 'none';
+  }
+</script>
+";
+
+
         } catch (Exception $e) {
             echo "<script>alert('Failed to send enquiry. Error: {$mail->ErrorInfo}');</script>";
         }
@@ -155,7 +169,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </style>
 
 <div class="breadcumb text-center">
-    <h2>PACKAGE INQUIRY</h2>
+    <h2>PACKAGE ENQUIRY</h2>
 </div>
 
 <section class="wrapper_inner mt-5 mb-5" style="margin:0px 0;">
@@ -223,7 +237,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             </div>
                             <div class="row marT10">
                                 <div class="col-md-12 pedT20 cont_submit">
-                                    <input type="submit" value="Submit Inquiry" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Loading...">
+                                    <input type="submit" value="Submit Enquiry" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Loading...">
                                 </div>
                             </div>
                         </form>

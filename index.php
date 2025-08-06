@@ -1703,48 +1703,64 @@ include('includes/header.php');
 </section>
 <!--BRANDS WE DEAL end-->
 
+<Style>
+.ho_sectionarea img {
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.ho_sectionarea img:hover {
+  transform: scale(1.2); 
+}
+</Style>
+
 <section class="ho_graysection testimonialbg">
     <div class="container">
         <div class="ho_sectionarea">
             <div class="row">
                 <div class="col-md-12 user_says text-center">
                     <h2 class="ho_heading-2" data-aos="flip-left" data-aos-delay="500">
-                        <span style="color:var(--color-4);">What</span> <span style="color:var(--main-color);">Our
-                            User</span><span style="color:var(--color-4);"> Say</span>
+                        <span style="color:var(--color-4);">What</span>
+                        <span style="color:var(--main-color);">Our User</span>
+                        <span style="color:var(--color-4);"> Say</span>
                     </h2>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
                     <div class="testimonials-carousel arrow_no owl-carousel owl-theme">
+
+                        <!-- Testimonial 1 -->
                         <div class="item">
                             <div class="ho_testimonial_item">
-                                <img
-                                    src="assets/images/images_(2).jpg">
+                                <img src="assets/images/Review/Review 4.jpg">
                                 <p><i class="icofont-quote-left"></i>
-                                    dreamskyairways.com is a trustworthy service provider for air ticket bookings. Their
-                                    reliability, user-friendly platform, and excellent customer service make them my
-                                    go-to choice for hassle-free travel planning. Highly recommended! <i
-                                        class="icofont-quote-right"></i>
+                                    <a href="https://www.dreamskyairways.com/">dreamskyairways.com</a> is a trustworthy service provider for air ticket bookings.
+                                    Their reliability, user-friendly platform, and excellent customer service make
+                                    them my go-to choice for hassle-free travel planning. Highly recommended!
+                                    <i class="icofont-quote-right"></i>
                                 </p>
                                 <div class="stars">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
+                                    <!-- <span class="fa fa-star checked"></span> -->
                                 </div>
-                                <h6>Goldy</h6>
+                                <h6>Suman Shrivash</h6>
                             </div>
                         </div>
+
+                        <!-- Testimonial 2 -->
                         <div class="item">
                             <div class="ho_testimonial_item">
                                 <img src="assets/images/professonal selfe.jpg">
                                 <p><i class="icofont-quote-left"></i>
-                                    I had a fantastic experience with dreamskyairways.com for booking my air tickets. The
-                                    website was user-friendly, and I found great deals tailored to my needs. Their
-                                    customer service was responsive and helpful. Transparent pricing <i
-                                        class="icofont-quote-right"></i>
+                                 fantastic experience with <a href="https://www.dreamskyairways.com/">dreamskyairways.com</a> for booking my air tickets.
+                                    The website was user-friendly, and I found great deals tailored to my needs.
+                                    Their customer service was responsive and helpful. Transparent pricing.
+                                    <i class="icofont-quote-right"></i>
                                 </p>
                                 <div class="stars">
                                     <span class="fa fa-star checked"></span>
@@ -1756,15 +1772,16 @@ include('includes/header.php');
                                 <h6>Akanshu Dutt</h6>
                             </div>
                         </div>
+
+                        <!-- Testimonial 3 -->
                         <div class="item">
                             <div class="ho_testimonial_item">
-                                <img
-                                    src="assets/images/Man_image.jpg">
+                                <img src="assets/images/Review/Review 3.jpg">
                                 <p><i class="icofont-quote-left"></i>
-                                    I had an outstanding experience with dreamskyairways.com! Their easy-to-use platform,
+                                    I had an outstanding experience with <a href="https://www.dreamskyairways.com/">dreamskyairways.com</a> Their easy-to-use platform,
                                     competitive prices, and top-notch customer service made booking my air ticket a
-                                    breeze. I appreciated their transparency and flexibility. <i
-                                        class="icofont-quote-right"></i>
+                                    breeze. I appreciated their transparency and flexibility.
+                                    <i class="icofont-quote-right"></i>
                                 </p>
                                 <div class="stars">
                                     <span class="fa fa-star checked"></span>
@@ -1773,11 +1790,52 @@ include('includes/header.php');
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
                                 </div>
-                                <h6>Ajay</h6>
+                                <h6>Ravi Chaudhary</h6>
                             </div>
                         </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="item">
+                            <div class="ho_testimonial_item">
+                                <img src="assets/images/Review/Review1.jpg" class="">
+                                <p><i class="icofont-quote-left"></i>
+    Choosing <strong><a href="https://www.dreamskyairways.com/">dreamskyairways.com</a></strong> was one of the best decisions I made for my travel plans. The website is smooth and easy to navigate, offering unbeatable prices and excellent flexibility. What truly sets them apart is their customer service — quick, courteous, and genuinely helpful. From booking to boarding, everything was seamless and stress-free. Highly recommended for anyone who values time, comfort, and professionalism.
+    <i class="icofont-quote-right"></i></p>
+
+                                <div class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <h6>Mukul</h6>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 5 -->
+                        <div class="item">
+                            <div class="ho_testimonial_item">
+                                <img src="assets/images/Review/Review 2.jpg">
+                                <p><i class="icofont-quote-left"></i>
+    I recently booked my flight through <strong><a href="https://www.dreamskyairways.com/">dreamskyairways.com</a></strong> and honestly, the whole process was super smooth. The site is easy to use, and I found a good deal without spending hours searching. What I really liked was how quickly their team responded when I had a small query. It just felt reliable. Will definitely use them again next time I travel.
+<i class="icofont-quote-right"></i></p>
+
+                                <div class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <!-- <span class="fa fa-star checked"></span> -->
+                                </div>
+                                <h6>Azad Hussain</h6>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class=" text-center all_testimonials">
+
+                    <!-- View All Button -->
+                    <div class="text-center all_testimonials">
                         <a href="#" class="btn btn-info">View all Testimonials</a>
                     </div>
                 </div>
@@ -1785,6 +1843,7 @@ include('includes/header.php');
         </div>
     </div>
 </section>
+
 
 
 
@@ -1925,25 +1984,6 @@ include('includes/header.php');
         margin: 15px auto;
     }
 </style>
-
-<!--Our Why section srart-->
-<<<<<<< HEAD
-<!-- <div class="theme2_why-we">
-    <div class="container">
-        <div class="footer-list">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 why_choose">
-                    <h4></h4>
-                    <p></p>
-                </div> -->
-            </div>
-        </div>
-    </div>
-</div>
-=======
-
->>>>>>> akanshu
-
 
 
 
