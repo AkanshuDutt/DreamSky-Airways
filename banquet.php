@@ -1,8 +1,132 @@
 <?php
+$pageTitle = "Banquet Booking | Dream Sky Airways Pvt Ltd.";
+$pageDescription = "Reserve a banquet with Dream Sky Airways for your special occasions. Fill out our form to book weddings, birthdays, corporate events, and more!";
 $pageCanonical = "http://localhost/_public_html/packages-policy.php";
 $pageRobots = "index, follow";
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require 'vendor/autoload.php';
+
 include("includes/header.php");
+
+// Handle form submission
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $allowed_types = ['application/pdf', 'image/jpeg', 'image/png'];
+    $max_file_size = 2 * 1024 * 1024; // 2 MB
+    $file_error = false;
+    $upload_dir = 'Uploads/';
+    $upload_file = '';
+
+    // Create uploads directory if it doesn't exist
+    if (!is_dir($upload_dir)) {
+        mkdir($upload_dir, 0755, true);
+    }
+
+    // Handle optional file upload
+    if (isset($_FILES['attachment']) && $_FILES['attachment']['error'] === UPLOAD_ERR_OK) {
+        if ($_FILES['attachment']['size'] > $max_file_size) {
+            echo "<script>alert('Uploaded file is too large. Max allowed size is 2 MB.');</script>";
+            $file_error = true;
+        } elseif (!in_array($_FILES['attachment']['type'], $allowed_types)) {
+            echo "<script>alert('Invalid file type. Only PDF, JPG, and PNG are allowed.');</script>";
+            $file_error = true;
+        } else {
+            $upload_file = $upload_dir . basename($_FILES['attachment']['name']);
+            if (!move_uploaded_file($_FILES['attachment']['tmp_name'], $upload_file)) {
+                echo "<script>alert('Failed to upload file.');</script>";
+                $file_error = true;
+            }
+        }
+    }
+
+    if (!$file_error) {
+        // Sanitize form inputs
+        $name = htmlspecialchars($_POST['name']);
+        $email = htmlspecialchars($_POST['email']);
+        $phone = htmlspecialchars($_POST['phone']);
+        $date = htmlspecialchars($_POST['date']);
+        $time = htmlspecialchars($_POST['time']);
+        $guests = htmlspecialchars($_POST['guests']);
+        $occasion = htmlspecialchars($_POST['occasion']);
+        $message = isset($_POST['message']) ? htmlspecialchars($_POST['message']) : '';
+
+        // Prepare HTML email content
+        $html_content = "
+        <html>
+        <head>
+            <style>
+                table { border-collapse: collapse; width: 100%; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                .footer { margin-top: 20px; font-size: 12px; color: #555; }
+            </style>
+        </head>
+        <body>
+            <div class='container'>
+                <h2>Banquet Booking Enquiry</h2>
+                <table>
+                    <tr><th>Name</th><td>$name</td></tr>
+                    <tr><th>Email</th><td>$email</td></tr>
+                    <tr><th>Phone Number</th><td>$phone</td></tr>
+                    <tr><th>Event Date</th><td>$date</td></tr>
+                    <tr><th>Event Time</th><td>$time</td></tr>
+                    <tr><th>Number of Guests</th><td>$guests</td></tr>
+                    <tr><th>Occasion</th><td>$occasion</td></tr>
+                    <tr><th>Additional Information</th><td>$message</td></tr>
+                </table>
+                <div class='footer'>Sent from Dream Sky Airways Banquet Booking Form</div>
+            </div>
+        </body>
+        </html>";
+
+        // Initialize PHPMailer
+        $mail = new PHPMailer(true);
+        try {
+            $mail->isSMTP();
+            $mail->Host = 'smtp.gmail.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'dreamskyairways@gmail.com';
+            $mail->Password = 'drmo oqyk xkys pfex'; // Replace with your App Password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port = 587;
+
+            $mail->setFrom('noreply@dreamskyairways.com', 'Dream Sky Airways');
+            $mail->addAddress('dreamskyairways@gmail.com');
+            $mail->addReplyTo($email, $name);
+            if ($upload_file) {
+                $mail->addAttachment($upload_file);
+            }
+            $mail->isHTML(true);
+            $mail->Subject = 'Banquet Booking Enquiry: ' . $name;
+            $mail->Body = $html_content;
+
+            $mail->send();
+
+            // Store data for modal
+            $modal_data = [
+                'name' => $name,
+                'email' => $email,
+                'phone' => $phone,
+                'date' => $date,
+                'time' => $time,
+                'guests' => $guests,
+                'occasion' => $occasion,
+                'message' => $message
+            ];
+
+        } catch (Exception $e) {
+            echo "<script>alert('Failed to send booking request. Error: {$mail->ErrorInfo}');</script>";
+        }
+
+        // Clean up uploaded file
+        if ($upload_file && file_exists($upload_file)) {
+            unlink($upload_file);
+        }
+    }
+}
 ?>
+
 <style>
     * {
       margin: 0;
@@ -89,7 +213,7 @@ include("includes/header.php");
 
     .form-container:hover {
       transform: translateY(-5px);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+     箱-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
     }
 
     .form-container h2 {
@@ -175,6 +299,38 @@ include("includes/header.php");
       display: none;
     }
 
+    /* Modal Styles */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 500px;
+        position: relative;
+        text-align: center;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
     /* Enhanced Responsive Design */
     @media (max-width: 1024px) {
       .banner {
@@ -252,112 +408,175 @@ include("includes/header.php");
       }
     }
 </style>
-</head>
-<body>
-  <div class="banner">
+
+<div class="banner">
     <h1>Banquet Booking</h1>
     <p>Elevate Your Celebration with Elegance and Style</p>
-  </div>
+</div>
 
-  <div class="form-container">
+<div class="form-container">
     <h2>Reserve Your Celebration</h2>
-    <form action="#" method="POST" onsubmit="return validateForm()">
-      <input type="text" id="name" name="name" placeholder="Your Full Name" pattern="[A-Za-z\s]+" required oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, ''); validateName();" />
-      <span id="name-error" class="error">Please enter only letters and spaces</span>
-      <input type="email" name="email" placeholder="Email Address" required />
-      <input type="tel" id="phone" name="phone" placeholder="Contact Number (10 digits)" pattern="[0-9]{10}" maxlength="10" required oninput="this.value = this.value.replace(/[^0-9]/g, ''); validatePhone();" />
-      <span id="phone-error" class="error">Please enter exactly 10 digits</span>
-      <input type="date" id="date" name="date" required />
-      <span id="date-error" class="error">Please select a valid future date</span>
-      <input type="time" name="time" required />
-      <input type="number" id="guests" name="guests" placeholder="No. of Guests (up to 999)" min="1" max="999" required oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3); validateGuests();" />
-      <span id="guests-error" class="error">Please enter up to 3 digits</span>
-      <select name="occasion" required>
-        <option value="">Select Occasion</option>
-        <option>Wedding</option>
-        <option>Birthday</option>
-        <option>Engagement</option>
-        <option>Corporate Event</option>
-        <option>Other</option>
-      </select>
-      <!-- <textarea name="message" placeholder="Additional Information (Optional)"></textarea> -->
-      <button type="submit">Book Now</button>
+    <form action="" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()" id="banquetForm">
+        <input type="text" id="name" name="name" placeholder="Your Full Name" pattern="[A-Za-z\s]+" required oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, ''); validateName();" />
+        <span id="name-error" class="error">Please enter only letters and spaces</span>
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="tel" id="phone" name="phone" placeholder="Contact Number (10 digits)" pattern="[0-9]{10}" maxlength="10" required oninput="this.value = this.value.replace(/[^0-9]/g, ''); validatePhone();" />
+        <span id="phone-error" class="error">Please enter exactly 10 digits</span>
+        <input type="date" id="date" name="date" required />
+        <span id="date-error" class="error">Please select a valid future date</span>
+        <input type="time" name="time" required />
+        <input type="number" id="guests" name="guests" placeholder="No. of Guests (up to 999)" min="1" max="999" required oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 3); validateGuests();" />
+        <span id="guests-error" class="error">Please enter up to 3 digits</span>
+        <select name="occasion" required>
+            <option value="">Select Occasion</option>
+            <option>Wedding</option>
+            <option>Birthday</option>
+            <option>Engagement</option>
+            <option>Corporate Event</option>
+            <option>Other</option>
+        </select>
+        <textarea name="message" placeholder="Additional Information (Optional)"></textarea>
+        <input type="file" name="attachment" accept=".pdf,.jpg,.jpeg,.png" />
+        <span id="file-error" class="error">File size must be less than 2 MB</span>
+        <button type="submit">Book Now</button>
     </form>
-  </div>
+</div>
 
-  <script>
-    // Set min and max dates for the date input
-    document.addEventListener('DOMContentLoaded', function() {
-      const today = new Date();
-      const minDate = today.toISOString().split('T')[0]; // Today's date
-      const maxDate = '2030-12-31'; // Reasonable future date
-      const dateInput = document.getElementById('date');
-      dateInput.setAttribute('min', minDate);
-      dateInput.setAttribute('max', maxDate);
+<!-- Modal for Submission Confirmation -->
+<div id="banquetModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3>Booking Request Sent Successfully!</h3>
+        <p>Thank you for your booking request! Our team will contact you soon.</p>
+        <button onclick="toggleDetails()" class="btn">View Details</button>
+        <div id="banquetDetails" style="display: none; margin-top: 20px;">
+            <p><strong>Name:</strong> <?php echo isset($modal_data['name']) ? $modal_data['name'] : ''; ?></p>
+            <p><strong>Email:</strong> <?php echo isset($modal_data['email']) ? $modal_data['email'] : ''; ?></p>
+            <p><strong>Phone Number:</strong> <?php echo isset($modal_data['phone']) ? $modal_data['phone'] : ''; ?></p>
+            <p><strong>Event Date:</strong> <?php echo isset($modal_data['date']) ? $modal_data['date'] : ''; ?></p>
+            <p><strong>Event Time:</strong> <?php echo isset($modal_data['time']) ? $modal_data['time'] : ''; ?></p>
+            <p><strong>Number of Guests:</strong> <?php echo isset($modal_data['guests']) ? $modal_data['guests'] : ''; ?></p>
+            <p><strong>Occasion:</strong> <?php echo isset($modal_data['occasion']) ? $modal_data['occasion'] : ''; ?></p>
+            <p><strong>Additional Information:</strong> <?php echo isset($modal_data['message']) ? $modal_data['message'] : ''; ?></p>
+            <p><strong>Attachment:</strong> <?php echo $upload_file ? 'Uploaded successfully' : 'Not uploaded'; ?></p>
+            <hr>
+            <p style="color: red; font-weight: bold;">
+                🔴 <em>Note:</em> In case of emergency, please contact us at <strong>+91-8750610304</strong>.
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const today = new Date();
+    const minDate = today.toISOString().split('T')[0]; 
+    const maxDate = '2030-12-31'; 
+    const dateInput = document.getElementById('date');
+    dateInput.setAttribute('min', minDate);
+    dateInput.setAttribute('max', maxDate);
+
+    
+    <?php if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($modal_data)) { ?>
+        document.getElementById('banquetForm').style.display = 'none';
+        document.getElementById('banquetModal').style.display = 'flex';
+    <?php } ?>
+
+
+    const fileInput = document.querySelector('input[name="attachment"]');
+    fileInput.addEventListener('change', function () {
+        const file = this.files[0];
+        const fileError = document.getElementById('file-error');
+        const maxFileSize = 2 * 1024 * 1024; 
+        if (file && file.size > maxFileSize) {
+            fileError.style.display = 'block';
+            this.value = '';
+        } else {
+            fileError.style.display = 'none';
+        }
     });
+});
 
-    function validateName() {
-      const nameInput = document.getElementById('name');
-      const nameError = document.getElementById('name-error');
-      const nameValue = nameInput.value;
+function validateName() {
+    const nameInput = document.getElementById('name');
+    const nameError = document.getElementById('name-error');
+    const nameValue = nameInput.value;
 
-      if (!/^[A-Za-z\s]+$/.test(nameValue) && nameValue !== '') {
+    if (!/^[A-Za-z\s]+$/.test(nameValue) && nameValue !== '') {
         nameError.style.display = 'block';
         return false;
-      } else {
+    } else {
         nameError.style.display = 'none';
         return true;
-      }
     }
+}
 
-    function validatePhone() {
-      const phoneInput = document.getElementById('phone');
-      const phoneError = document.getElementById('phone-error');
-      const phoneValue = phoneInput.value;
+function validatePhone() {
+    const phoneInput = document.getElementById('phone');
+    const phoneError = document.getElementById('phone-error');
+    const phoneValue = phoneInput.value;
 
-      if (phoneValue.length !== 10 || !/^\d{10}$/.test(phoneValue)) {
+    if (phoneValue.length !== 10 || !/^\d{10}$/.test(phoneValue)) {
         phoneError.style.display = 'block';
         return false;
-      } else {
+    } else {
         phoneError.style.display = 'none';
         return true;
-      }
     }
+}
 
-    function validateGuests() {
-      const guestsInput = document.getElementById('guests');
-      const guestsError = document.getElementById('guests-error');
-      const guestsValue = guestsInput.value;
+function validateGuests() {
+    const guestsInput = document.getElementById('guests');
+    const guestsError = document.getElementById('guests-error');
+    const guestsValue = guestsInput.value;
 
-      if (guestsValue.length > 3 || !/^\d{1,3}$/.test(guestsValue) || guestsValue < 1) {
+    if (guestsValue.length > 3 || !/^\d{1,3}$/.test(guestsValue) || guestsValue < 1) {
         guestsError.style.display = 'block';
         return false;
-      } else {
+    } else {
         guestsError.style.display = 'none';
         return true;
-      }
     }
+}
 
-    function validateDate() {
-      const dateInput = document.getElementById('date');
-      const dateError = document.getElementById('date-error');
-      const selectedDate = new Date(dateInput.value);
-      const today = new Date();
-      today.setHours(0, 0, 0, 0); // Reset time for comparison
-      const maxDate = new Date('2030-12-31');
+function validateDate() {
+    const dateInput = document.getElementById('date');
+    const dateError = document.getElementById('date-error');
+    const selectedDate = new Date(dateInput.value);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const maxDate = new Date('2030-12-31');
 
-      if (!dateInput.value || selectedDate < today || selectedDate > maxDate) {
+    if (!dateInput.value || selectedDate < today || selectedDate > maxDate) {
         dateError.style.display = 'block';
         return false;
-      } else {
+    } else {
         dateError.style.display = 'none';
         return true;
-      }
     }
+}
 
-    function validateForm() {
-      return validateName() && validatePhone() && validateGuests() && validateDate();
+function validateForm() {
+    return validateName() && validatePhone() && validateGuests() && validateDate();
+}
+
+function closeModal() {
+    document.getElementById('banquetModal').style.display = 'none';
+    document.getElementById('banquetForm').style.display = 'block';
+}
+
+function toggleDetails() {
+    const details = document.getElementById('banquetDetails');
+    const button = document.querySelector('.modal-content button');
+    if (details.style.display === 'none') {
+        details.style.display = 'block';
+        button.textContent = 'Hide Details';
+    } else {
+        details.style.display = 'none';
+        button.textContent = 'View Details';
     }
-  </script>
+}
+</script>
 
 <?php include("includes/footer.php"); ?>
