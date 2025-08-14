@@ -2,7 +2,7 @@
 
 
 $pageTitle = "Dream Sky Airways Pvt Ltd | Leading Tour and Travel Company in India";
-$pageDescription = "Plan your perfect trip with Dream Sky Airways – a trusted travel company in India offering flight bookings, hotel reservations, bus and cab services, custom holiday packages, and more. Explore stress-free travel planning today.";
+$pageDescription = "Plan your perfect trip with Dream Sky Airways â€“ a trusted travel company in India offering flight bookings, hotel reservations, bus and cab services, custom holiday packages, and more. Explore stress-free travel planning today.";
 
 $pageCanonical = "https://www.dreamskyairways.com/";
 
@@ -18,7 +18,7 @@ include('includes/header.php');
     <div class="splide__track">
         <ul class="splide__list">
     <li class="splide__slide splide__slide-sky">
-        <img src="assets/images/sky.jpg" alt="" />
+        <img src="assets/images/Sky.jpg" alt="" />
     </li>
     <li class="splide__slide">
         <img src="assets/images/3.webp" alt="" />
@@ -55,7 +55,7 @@ include('includes/header.php');
     .slide-sky img {
    width: 100%;
   height: 100%;
-  object-fit: contain; /* 👈 shows full image */
+  object-fit: contain; /* ðŸ‘ˆ shows full image */
   object-position: center center;
   background: white; /* optional: background for empty space */
 }
@@ -421,7 +421,7 @@ include('includes/header.php');
                                             <span class="fa fa-star checked"></span>
                                         </div>
                                         <div class="ho_holiday_price">
-                                            Starting price From <i class='fa fa-inr'></i> ₹2,999/Person </div>
+                                            Starting price From <i class='fa fa-inr'></i> â‚¹2,999/Person </div>
                                         <div class="ho_holiday_deail">
                                             <p class="peragraph ">
                                                 <i class="icofont-clock-time"></i>
@@ -521,7 +521,7 @@ include('includes/header.php');
                                             <span class="fa fa-star checked"></span>
                                         </div>
                                         <div class="ho_holiday_price">
-                                            Starting price From <i class='fa fa-inr'></i> ₹12,000/Person </div>
+                                            Starting price From <i class='fa fa-inr'></i> â‚¹12,000/Person </div>
                                         <div class="ho_holiday_deail">
                                             <p class="peragraph ">
                                                 <i class="icofont-clock-time"></i>
@@ -554,7 +554,7 @@ include('includes/header.php');
                                             <span class="fa fa-star checked"></span>
                                         </div>
                                         <div class="ho_holiday_price">
-                                            Starting price From <i class='fa fa-inr'></i> ₹7,000/Person </div>
+                                            Starting price From <i class='fa fa-inr'></i> â‚¹7,000/Person </div>
                                         <div class="ho_holiday_deail">
                                             <p class="peragraph ">
                                                 <i class="icofont-clock-time"></i>
@@ -1680,7 +1680,7 @@ include('includes/header.php');
                             <div class="ho_testimonial_item">
                                 <img src="assets/images/Review/Review1.jpg" class="">
                                 <p><i class="icofont-quote-left"></i>
-    Choosing <strong><a href="https://www.dreamskyairways.com/">dreamskyairways.com</a></strong> was one of the best decisions I made for my travel plans. The website is smooth and easy to navigate, offering unbeatable prices and excellent flexibility. What truly sets them apart is their customer service — quick, courteous, and genuinely helpful. From booking to boarding, everything was seamless and stress-free. Highly recommended for anyone who values time, comfort, and professionalism.
+    Choosing <strong><a href="https://www.dreamskyairways.com/">dreamskyairways.com</a></strong> was one of the best decisions I made for my travel plans. The website is smooth and easy to navigate, offering unbeatable prices and excellent flexibility. What truly sets them apart is their customer service â€” quick, courteous, and genuinely helpful. From booking to boarding, everything was seamless and stress-free. Highly recommended for anyone who values time, comfort, and professionalism.
     <i class="icofont-quote-right"></i></p>
 
                                 <div class="stars">
