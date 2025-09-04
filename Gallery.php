@@ -30,99 +30,124 @@ $galleryImages = [
 <style> 
 body.gallery-page { background: #fff !important; }  
 
-/* Breadcrumb Section */
-.breadcumb { 
-  background: linear-gradient(90deg, #ff7eb3, #65c7f7, #0052d4); 
-  padding: 40px 0; 
-  color: white; 
-} 
-.breadcumb h2 { font-size: 32px; font-weight: 700; margin: 0; }  
+.breadcumb {
+  background: url('assets/images/GalBanner.webp') center center/cover no-repeat;
+padding: 120px 0;
+  color: white;
+  position: relative;
+  text-align: center;
+}
 
-/* Carousel Images */
-.carousel-item img {   
-  width: 100%;   
-  height: 400px;   
-  object-fit: cover;   
-  border-radius: 10px;   
-  cursor: pointer;  
-}  
+/* Optional dark overlay on image for better text visibility */
+.breadcumb::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* change opacity as needed */
+  z-index: 1;
+}
 
-/* Responsive Image Height */
-@media (max-width: 768px) {
-  .carousel-item img {
-    height: 50vh; /* 50% of screen height on small devices */
-  }
-  .video-frame {
-    height: 350px; /* smaller height for videos on mobile */
-  }
-  .video-inside-frame {
-    height: 350px;
-  }
+.breadcumb h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+  z-index: 2; /* ensures text appears above overlay */
+}
+/* Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+.image-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.image-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Video Frame */
+.video-frame {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 40px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.video-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none; /* disables controls */
 }
 
 /* Section Titles */
-.section-title {   
-  text-align: center;   
-  margin: 40px 0 20px;   
-  font-weight: 700;  
-  font-size: 26px;   
-  background: linear-gradient(90deg, #ff512f, #dd2476);  
-  -webkit-background-clip: text;  
-  -webkit-text-fill-color: transparent; 
-}  
-
-/* Back Button */
-.back-btn {   
-  position: fixed;   
-  top: 20px;   
-  left: 20px;   
-  z-index: 2000;   
-  background: linear-gradient(90deg, #ff512f, #dd2476);  
-  color: #fff;   
-  border: none;    
-  margin-top:120px;  
-  padding: 10px 20px;  
-  font-weight: bold;  
-  border-radius: 5px;  
-  cursor: pointer;  
-} 
-.back-btn:hover { background: #444; }  
+.section-title {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-weight: 700;
+  font-size: 26px;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /* Intro Text */
-.intro-text {   
-  max-width: 800px;   
-  margin: 20px auto;   
-  text-align: center;   
-  font-size: 18px;   
-  font-weight: 500;  
-  background: linear-gradient(90deg, #f7971e, #ffd200);  
-  -webkit-background-clip: text;  
-  -webkit-text-fill-color: transparent; 
-}  
+.intro-text {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #f7971e, #ffd200);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-/* Video Frame */
-.video-frame {  
-  width: 100%;  
-  max-width: 800px;  
-  height:400px;     
-  margin: auto;  
-  border: 4px solid #222;  
-  border-radius: 12px;  
-  overflow: hidden;  
-  position: relative;  
-  background: #000; 
-}  
-.video-inside-frame {  
-  width: 100%;  
-  height: 400px;  
-  object-fit: cover;  
-}  
-</style>  
+/* Back Button */
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2000;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  color: #fff;
+  border: none;
+  margin-top: 300px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.back-btn:hover {
+  background: #444;
+}
 
-<!-- Back Button --> 
+@media (max-width: 768px) {
+  .video-frame {
+    height: 250px;
+  }
+  .image-grid img {
+    height: 150px;
+  }
+}
+</style>
+
+<!-- Back Button -->
 <button class="back-btn" onclick="window.location.href='index.php'">←</button>  
 
-<!-- Page Title --> 
+<!-- Page Title -->
 <div class="breadcumb text-center">   
   <div class="container">     
     <h2>Gallery</h2>   
@@ -141,73 +166,50 @@ body.gallery-page { background: #fff !important; }
       </p>     
     </div>      
 
-    <!-- Gallery Slider -->     
-    <h3 class="section-title"> Team Gallery </h3>     
-    <div id="galleryCarousel" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="2000">       
-      <div class="carousel-inner">         
-        <?php foreach($galleryImages as $index => $img) { ?>           
-          <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">             
-            <img src="<?= $img ?>" alt="Gallery Image" onclick="openModal('<?= $img ?>')">           
-          </div>         
-        <?php } ?>       
-      </div>       
-      <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">         
-        <span class="carousel-control-prev-icon"></span>       
-      </button>       
-      <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">         
-        <span class="carousel-control-next-icon"></span>       
-      </button>     
-    </div>      
+    <!-- Gallery Grid -->     
+    <h3 class="section-title">Team Gallery</h3>     
+    <div class="image-grid">
+      <?php foreach($galleryImages as $img) { ?>
+        <img src="<?= $img ?>" alt="Gallery Image" onclick="openModal('<?= $img ?>')">
+      <?php } ?>
+    </div>
 
-    <!-- Video Section -->   
-    <h3 class="section-title">Our Videos</h3> 
-    <div class="video-frame">   
-      <div id="videoCarousel" class="carousel slide" data-bs-ride="false">     
-        <div class="carousel-inner">       
-          <?php foreach($galleryVideos as $index => $vid) { ?>         
-            <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">           
-              <video autoplay muted controls playsinline class="video-inside-frame">             
-                <source src="<?= $vid ?>" type="video/mp4">             
-                Your browser does not support the video tag.           
-              </video>         
-            </div>       
-          <?php } ?>     
-        </div>     
-        <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">       
-          <span class="carousel-control-prev-icon"></span>     
-        </button>     
-        <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">       
-          <span class="carousel-control-next-icon"></span>     
-        </button>   
-      </div> 
-    </div>     
-  </div> 
-</section>  
+    <!-- Videos Section -->
+    <h3 class="section-title">Our Videos</h3>
+    <?php foreach($galleryVideos as $vid) { ?>
+      <div class="video-frame">
+        <video autoplay loop muted playsinline>
+          <source src="<?= $vid ?>" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    <?php } ?>
 
-<!-- Popup Modal --> 
-<div class="modal fade" id="imageModal" tabindex="-1">   
-  <div class="modal-dialog modal-dialog-centered modal-lg">     
-    <div class="modal-content bg-transparent border-0">       
-      <img id="modalImage" src="" class="w-100 rounded">     
-    </div>   
-  </div> 
-</div>  
+  </div>
+</section>
+
+<!-- Image Modal -->
+<!-- Image Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0 position-relative">
+
+      <!-- Close Button -->
+      <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close" style="z-index: 1055; background-color: white;"></button>
+
+      <!-- Modal Image -->
+      <img id="modalImage" src="" class=" rounded" style="max-height: 80vh; object-fit: contain;">
+    </div>
+  </div>
+</div>
+
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
-<script> 
-function openModal(imgSrc) {   
-  document.getElementById('modalImage').src = imgSrc;   
-  new bootstrap.Modal(document.getElementById('imageModal')).show(); 
-}  
-
-// Pause other videos when sliding 
-const videoCarousel = document.getElementById('videoCarousel'); 
-videoCarousel.addEventListener('slid.bs.carousel', function () {   
-  const videos = videoCarousel.querySelectorAll('video');   
-  videos.forEach(v => v.pause());    
-  const activeVideo = videoCarousel.querySelector('.carousel-item.active video');   
-  if (activeVideo) {     
-    activeVideo.play();   
-  } 
-}); 
+<script>
+function openModal(imgSrc) {
+  document.getElementById('modalImage').src = imgSrc;
+  new bootstrap.Modal(document.getElementById('imageModal')).show();
+}
 </script>
+
