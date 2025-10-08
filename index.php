@@ -18,7 +18,7 @@ include('includes/header.php');
     <div class="splide__track">
         <ul class="splide__list ">
             <li class="splide__slide">
-                <img src="assets/images/Sky.jpg" alt="" />
+
             </li>
             <li class="splide__slide">
                 <img src="assets/images/3.webp" alt="" />

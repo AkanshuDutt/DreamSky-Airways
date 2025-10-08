@@ -316,8 +316,7 @@
                   <li><a href="who-we-are.php">About Us</a></li>
                   <li><a href="service.php">Services</a></li>
                   <li><a href="career.php">Career</a></li>
-                  <li><a href="Contact-Enquery-Form.php">Enquery</a></li>
-                  <li><a href="Gallery.php">Galary</a></li>
+
                   <li><a href="faq-page.php">FAQ</a></li>
                   <li><a href="contact-us.php">Contact</a></li>
                 </ul>
@@ -333,15 +332,7 @@
     <!-- Offcanvas Menu -->
     <div class="offcanvas-menu" id="mobileMenu">
       <ul>
-        <li class="active"><a href="./">Home</a></li>
-        <li><a href="who-we-are.php">About Us</a></li>
-        <li><a href="service.php">Services</a></li>
-        <li><a href="career.php">Career</a></li>
-        <li><a href="Contact-Enquery-Form.php">Enquery</a></li>
-        <li><a href="Gallery.php">Galary</a></li>
-        <li><a href="faq-page.php">FAQ</a></li>
-        <li><a href="contact-us.php">Contact</a></li>
-        <li><i class="fa fa-phone"></i> <a href="tel:8750610304" style="color:#fff;"> +91-875-061-0304 </a></li>
+
         <li><i class="fa fa-envelope"></i> <a href="mailto:info@dreamskyairways.com" style="color:#fff;"> info@dreamskyairways.com </a></li>
         <li><a href="#" style="color: #fff"><i class="fa fa-pencil"></i> Apply for Job</a></li>
       </ul>
