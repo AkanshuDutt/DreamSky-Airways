@@ -4,13 +4,73 @@ $pageDescription = "Enquire about travel packages with Dream Sky Airways. Fill t
 $pageCanonical = "https://www.dreamskyairways.com/package-enquiry.php"; 
 $pageRobots = 'index,follow';
 
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
 include('includes/header.php');
+?>
 
+<style>
+    label {
+        font-weight: 600;
+        margin-bottom: 5px;
+        display: block;
+    }
+    .form-control {
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-size: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    textarea.form-control { resize: vertical; }
+    .btn-primary {
+        background: #007bff;
+        border: none;
+        padding: 10px 25px;
+        font: 600 16px inherit;
+        border-radius: 30px;
+    }
+    .btn-primary:hover { background: #0056b3; }
+    .cont_submit { text-align: center; }
+    .wrapper_inner { padding: 30px 0; }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 500px;
+        position: relative;
+        text-align: center;
+    }
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    @media (max-width:768px){
+        .form-group .col-md-6,
+        .form-group .col-md-12 { margin-bottom: 15px; }
+    }
+</style>
+
+<?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $allowed_types = ['application/pdf', 'image/jpeg', 'image/png'];
     $max_file_size = 1048576; 
@@ -50,20 +110,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $html_content = "
         <html>
         <head>
-            <style>
-                body { font-family: 'Roboto', sans-serif; color: #333; }
-                .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
-                h2 { color: #f58120; font-family: 'Quicksand', sans-serif; text-align: center; }
-                table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-                th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
-                th { background: #f58120; color: #fff; font-family: 'Quicksand', sans-serif; }
-                td { background: #f9f9f9; }
-                .footer { margin-top: 20px; text-align: center; color: #777; }
-            </style>
         </head>
         <body>
             <div class='container'>
-                <h2>New Package Enquiry</h2>
+                <h2>Package Enquiry</h2>
                 <table>
                     <tr><th>Full Name</th><td>$full_name</td></tr>
                     <tr><th>Father's Name</th><td>$father_name</td></tr>
@@ -74,7 +124,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <tr><th>Address</th><td>$address</td></tr>
                     <tr><th>Message</th><td>$message</td></tr>
                 </table>
-                <div class='footer'>Sent from Dream Sky Airways Enquiry Form</div>
+                <div class='footer'>Sent from Dream Sky Airways Enquiry</div>
             </div>
         </body>
         </html>";
@@ -82,36 +132,35 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail = new PHPMailer(true);
         try {
             $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com'; 
+            $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'dreamskyairways@gmail.com'; 
-            $mail->Password = 'uvk5ewwxieolnguybnmobyyntwte2lf7'; 
+            $mail->Username = 'dreamskyairways@gmail.com';
+            $mail->Password = 'drmo oqyk xkys pfex';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
-         
             $mail->setFrom('noreply@dreamskyairways.com', 'Dream Sky Airways');
-            $mail->addAddress('dreamskyairways@gmail.com'); 
+            $mail->addAddress('dreamskyairways@gmail.com');
             $mail->addReplyTo($email, $full_name);
-            $mail->addAttachment($upload_file); 
+            $mail->addAttachment($upload_file);
             $mail->isHTML(true);
-            $mail->Subject = ' Package Enquiry ' . $full_name;
+            $mail->Subject = 'Package Enquiry ' . $full_name;
             $mail->Body = $html_content;
 
-                  $mail->send();
+            $mail->send();
 
-            echo "<div style='background:#e6ffe6; padding:15px; margin:20px; border:1px solid #0a0;'>
-                    <h3>Thank you for your enquiry!</h3>
-                    <p><strong>Full Name:</strong> $full_name</p>
-                    <p><strong>Father's Name:</strong> $father_name</p>
-                    <p><strong>Email:</strong> $email</p>
-                    <p><strong>City:</strong> $city</p>
-                    <p><strong>State:</strong> $state</p>
-                    <p><strong>Contact Number:</strong> $contact</p>
-                    <p><strong>Address:</strong> $address</p>
-                    <p><strong>Message:</strong> $message</p>
-                    <p><strong>ID Proof:</strong> Uploaded successfully</p>
-                  </div>";
+            // Store data for modal
+            $modal_data = [
+                'full_name' => $full_name,
+                'father_name' => $father_name,
+                'email' => $email,
+                'city' => $city,
+                'state' => $state,
+                'contact' => $contact,
+                'address' => $address,
+                'message' => $message
+            ];
+
         } catch (Exception $e) {
             echo "<script>alert('Failed to send enquiry. Error: {$mail->ErrorInfo}');</script>";
         }
@@ -122,37 +171,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 ?>
-
-<style>
-    label {
-        font-weight: 600;
-        margin-bottom: 5px;
-        display: block;
-    }
-    .form-control {
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        padding: 8px 12px;
-        font-size: 15px;
-        margin-bottom: 15px;
-        width: 100%;
-    }
-    textarea.form-control { resize: vertical; }
-    .btn-primary {
-        background: #007bff;
-        border: none;
-        padding: 10px 25px;
-        font: 600 16px inherit;
-        border-radius: 30px;
-    }
-    .btn-primary:hover { background: #0056b3; }
-    .cont_submit { text-align: center; }
-    .wrapper_inner { padding: 30px 0; }
-    @media (max-width:768px){
-        .form-group .col-md-6,
-        .form-group .col-md-12 { margin-bottom: 15px; }
-    }
-</style>
 
 <div class="breadcumb text-center">
     <h2>PACKAGE ENQUIRY</h2>
@@ -233,5 +251,56 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </div>
     </div>
 </section>
+
+<!-- Modal HTML -->
+<div id="enquiryModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3>Submission Successful!</h3>
+    <p>Thank you for your enquiry! Our team will contact you as soon as possible.</p>
+    <button onclick="toggleDetails()" class="btn btn-primary">View Details</button>
+    <div id="enquiryDetails" style="display: none; margin-top: 20px;">
+      <p><strong>Full Name:</strong> <?php echo isset($modal_data['full_name']) ? $modal_data['full_name'] : ''; ?></p>
+      <p><strong>Father's Name:</strong> <?php echo isset($modal_data['father_name']) ? $modal_data['father_name'] : ''; ?></p>
+      <p><strong>Email:</strong> <?php echo isset($modal_data['email']) ? $modal_data['email'] : ''; ?></p>
+      <p><strong>City:</strong> <?php echo isset($modal_data['city']) ? $modal_data['city'] : ''; ?></p>
+      <p><strong>State:</strong> <?php echo isset($modal_data['state']) ? $modal_data['state'] : ''; ?></p>
+      <p><strong>Contact Number:</strong> <?php echo isset($modal_data['contact']) ? $modal_data['contact'] : ''; ?></p>
+      <p><strong>Address:</strong> <?php echo isset($modal_data['address']) ? $modal_data['address'] : ''; ?></p>
+      <p><strong>Message:</strong> <?php echo isset($modal_data['message']) ? $modal_data['message'] : ''; ?></p>
+      <p><strong>ID Proof:</strong> Uploaded successfully</p>
+      <hr>
+      <p style="color: red; font-weight: bold;">
+        🔴 <em>Note:</em> In case of emergency, please contact us at <strong>+91-8750610304</strong>.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    <?php if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($modal_data)) { ?>
+      document.getElementById('packageForm').style.display = 'none';
+      document.getElementById('enquiryModal').style.display = 'flex';
+    <?php } ?>
+  });
+
+  function closeModal() {
+    document.getElementById('enquiryModal').style.display = 'none';
+    document.getElementById('packageForm').style.display = 'block';
+  }
+
+  function toggleDetails() {
+    const details = document.getElementById('enquiryDetails');
+    const button = document.querySelector('.modal-content button');
+    if (details.style.display === 'none') {
+      details.style.display = 'block';
+      button.textContent = 'Hide Details';
+    } else {
+      details.style.display = 'none';
+      button.textContent = 'View Details';
+    }
+  }
+</script>
 
 <?php include('includes/footer.php'); ?>

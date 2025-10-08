@@ -4,6 +4,7 @@
         <div class="clearfix"></div>
     <div class="container inner-container-static inner-content">
             </div>
+    <!-- ....................... -->
 </div>
 <!-- /container -->
 

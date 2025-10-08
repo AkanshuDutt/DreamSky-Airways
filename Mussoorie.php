@@ -10,6 +10,10 @@
     margin: 5px;
     min-width: 150px;
   }
+  /* .accordion-buttons .btn {
+    margin: 5px;
+    min-width: 150px;
+  } */
 
   .carousel-inner > .item > img {
     width: 60%;
