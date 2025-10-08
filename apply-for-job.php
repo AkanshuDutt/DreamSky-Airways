@@ -9,6 +9,7 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
 include('includes/header.php');
+// include('includes/header.php');
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $allowed_types = ['application/pdf', 'image/jpeg', 'image/png'];
