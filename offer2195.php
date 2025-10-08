@@ -15,6 +15,9 @@
             </div>
         </div>
     </section>
+
+
+<!-- ......................................... -->
     <section class="inner_middle_area offerlist-section xs_p0">
         <div class="container">
             <div class="col-md-4 offermob_p0">
