@@ -6,24 +6,37 @@ $pageRobots = 'index,follow';
 
 // Gallery Sections
 $gallerySections = [
-  "Cabins" => [
-    ["src" => "assets/images/Teamimages/Founder cabin.jpg", "title" => "Founder Cabin"],
-  ],
-  "Office Area" => [
-    ["src" => "assets/images/Teamimages/Office.jpg", "title" => "Office View"],
-    ["src" => "assets/images/Teamimages/Working Area.jpg", "title" => "Working Area"],
-    ["src" => "assets/images/Teamimages/Working_area (2).jpg", "title" => "Working Area"],
-    ["src" => "assets/images/Teamimages/Working_area.jpg", "title" => "Working Area"]
-  ],
-  "Reception & Waiting" => [
-    ["src" => "assets/images/Teamimages/Reception Area.jpg", "title" => "Reception Area"],
-    ["src" => "assets/images/Waiting Area.jpg", "title" => "Waiting Area"]
-  ],
-  "Pooja & Success" => [
-    ["src" => "assets/images/Teamimages/Pooja-area.jpg", "title" => "Pooja Area"],
-    ["src" => "assets/images/Teamimages/SuccessGallery.jpg", "title" => "Success Gallery"]
+    "Cabins" => [
+        ["src" => "assets/images/Teamimages/Founder cabin.jpg", "title" => "Founder Cabin"],
+    ],
+
+    "Office Area" => [
+        ["src" => "assets/images/Teamimages/Office.jpg", "title" => "Office View"],
+        ["src" => "assets/images/Teamimages/Working Area.jpg", "title" => "Working Area"],
+        ["src" => "assets/images/Teamimages/Working_area (2).jpg", "title" => "Working Area"],
+        ["src" => "assets/images/Teamimages/Working_area.jpg", "title" => "Working Area"],
+    ],
+
+    "Reception & Waiting" => [
+        ["src" => "assets/images/Teamimages/Reception Area.jpg", "title" => "Reception Area"],
+        ["src" => "assets/images/Teamimages/Waiting Area.jpg", "title" => "Waiting Area"],
+    ],
+
+    "Pooja & Success" => [
+        ["src" => "assets/images/Teamimages/Pooja-area.jpg", "title" => "Pooja Area"],
+        ["src" => "assets/images/Teamimages/SuccessGallery.jpg", "title" => "Success Gallery"],
+        
+    ],
+  "Head Office" =>[
+    ["src" => "assets/images/Teamimages/office-building-front.jpg", "title" => "Building Front View"],
+["src" => "assets/images/Teamimages/office-building-front (1).jpg", "title" => "Main Office Building"],
+["src" => "assets/images/Teamimages/office-building-front (2).jpg", "title" => "Office Entrance"],
+["src" => "assets/images/Teamimages/office-building-front (3).jpg", "title" => "Front Side View"],
+["src" => "assets/images/Teamimages/office-building-front (4).jpg", "title" => "Building Side View"],
+
   ]
 ];
+
 ?>  
 
 <!DOCTYPE html>
