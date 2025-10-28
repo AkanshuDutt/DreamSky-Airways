@@ -523,6 +523,7 @@ include('includes/header.php');
             <div class="row">
                 <div class="col-md-12  col-sm-12 col-xs-12" data-aos="fade-up" data-aos-delay="300">
                     <div class="ho_blog-carousel owl-carousel owl-theme">
+                        
                         <div class="item">
                             <div class="ho_holiday">
                                 <div class="ho_holiday-img">
@@ -549,6 +550,39 @@ include('includes/header.php');
                                             </p>
                                             <p class="ho_holiday_location">
                                                 <span><i class="icofont-google-map"></i>Delhi-Mussoorie</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="ho_holiday">
+                                <div class="ho_holiday-img">
+                                    <a href="JimCorbett.php"> <img
+                                            src="./assets/images/service/PackagesImages/jaisalmer/Jaisalmer1.jpg"></a>
+                                </div>
+                                <a href="JimCorbett.php">
+                                    <div class="ho_holiday-cont">
+                                        <h3>Jaisalmer (Rajasthan)</h3>
+                                        <div class="ho_rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </div>
+                                        <div class="ho_holiday_price">
+                                            Starting price From <i class='fa fa-inr'></i> ₹3499/Person </div>
+                                        <div class="ho_holiday_deail">
+                                            <p class="peragraph ">
+                                                <i class="icofont-clock-time"></i>
+                                                <span>2 Nights /</span>
+                                                <span>2 Days</span>
+                                            </p>
+                                            <p class="ho_holiday_location">
+                                                <span><i class="icofont-google-map"></i>Delhi-Jaisalmer</span>
                                             </p>
                                         </div>
 
@@ -660,11 +694,11 @@ include('includes/header.php');
                             <div class="ho_holiday">
                                 <div class="ho_holiday-img">
                                     <a href="JimCorbett.php"> <img
-                                            src="./assets/images/service/PackagesImages/Jimcorbett/jim corbett view2.jpg"></a>
+                                            src="./assets/images/service/PackagesImages/jaisalmer/Jaisalmer1.jpg"></a>
                                 </div>
                                 <a href="JimCorbett.php">
                                     <div class="ho_holiday-cont">
-                                        <h3>JimCorbett</h3>
+                                        <h3>Jaisalmer (Rajasthan)</h3>
                                         <div class="ho_rating">
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
@@ -673,7 +707,7 @@ include('includes/header.php');
                                             <span class="fa fa-star checked"></span>
                                         </div>
                                         <div class="ho_holiday_price">
-                                            Starting price From <i class='fa fa-inr'></i> ₹7,000/Person </div>
+                                            Starting price From <i class='fa fa-inr'></i> ₹3499/Person </div>
                                         <div class="ho_holiday_deail">
                                             <p class="peragraph ">
                                                 <i class="icofont-clock-time"></i>
@@ -681,7 +715,7 @@ include('includes/header.php');
                                                 <span>2 Days</span>
                                             </p>
                                             <p class="ho_holiday_location">
-                                                <span><i class="icofont-google-map"></i>Delhi-Ramnagar</span>
+                                                <span><i class="icofont-google-map"></i>Delhi-Jaisalmer</span>
                                             </p>
                                         </div>
 
